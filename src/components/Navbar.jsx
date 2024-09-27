@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NOTEXTLOGO from "../assets/NOTEXTLOGO.png";
+import NOTEXTLOGO from "../assets/images/NOTEXTLOGO.png";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {

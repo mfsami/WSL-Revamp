@@ -1,0 +1,66 @@
+@font-face {
+  font-family: OPTICirrus;
+  src: url(../assets/fonts/OPTICirrus-Medium/OPTICirrus-Medium.ttf.eot),
+    url(../assets/fonts/OPTICirrus-Medium/OPTICirrus-Medium.ttf.svg),
+    url(../assets/fonts/OPTICirrus-Medium/OPTICirrus-Medium.ttf.woff),
+    url(../assets/fonts/OPTICirrus-Medium/webfonts.ffonts.net.htm),
+    url(../assets/fonts/OPTICirrus-Medium/webfonts.ffonts.net.txt);
+}
+
+h1 {
+  font-family: "OPTICirrus", sans-serif;
+}
+
+/* All elements text + image*/
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Big background image */
+.BGimg {
+  width: 100%;
+}
+
+/* Container that holds FIGHT WITH WSL*/
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: start;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* Text individual elements*/
+.FIGHT {
+  font: bold;
+  color: white;
+  font-size: 100px;
+
+  margin: 0;
+  position: absolute;
+  top: 50px;
+  left: 280px;
+}
+
+.WITH {
+  font: bold;
+  color: white;
+  font-size: 100px;
+
+  margin: 0;
+  position: absolute;
+  top: 150px;
+  left: 280px;
+}
+.WSL {
+  font: bold;
+  color: white;
+  font-size: 100px;
+
+  margin: 0;
+  position: absolute;
+  top: 250px;
+  left: 280px;
+}
