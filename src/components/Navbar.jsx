@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NOTEXTLOGO from "../assets/images/NOTEXTLOGO.png";
+import "../styles/Navbar.css";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
@@ -11,12 +12,14 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white ">
       <div className="flex justify- items-center">
-        <img className="w-[55px] mx-2" src={NOTEXTLOGO} alt="/" />
-        <div className="flex flex-col">
-          <h1 className="w-full text-xl font-bold text-[#ffffff] ">
-            WINTER SOCCER LEAGUE
-          </h1>
-          <p className="w-full text-[#ffffff] ">OFFICIAL SITE</p>
+        <div className="logoNav">
+          <img className="w-[55px] mx-2" src={NOTEXTLOGO} alt="/" />
+          <div className="flex flex-col">
+            <h1 className="w-full text-xl font-bold text-[#ffffff] ">
+              WINTER SOCCER LEAGUE
+            </h1>
+            <p className="w-full text-[#ffffff] ">OFFICIAL SITE</p>
+          </div>
         </div>
       </div>
 

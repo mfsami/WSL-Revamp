@@ -4,13 +4,13 @@ import "../styles/FrontBg.css";
 
 const FrontBg = () => {
   return (
-    <div className="container">
+    <div>
       <img className="BGimg" src={BGIMAGE} alt="/" />
-      <div className="textContainer">
+      {/* <div className="textContainer">
         <h1 className="FIGHT">Fight</h1>
         <h1 className="WITH">with</h1>
         <h1 className="WSL">WSL</h1>
-      </div>
+      </div> */}
     </div>
   );
 };
