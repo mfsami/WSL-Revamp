@@ -1,5 +1,5 @@
 .scoreContainer {
-  border: 3px solid white;
+  /* border: 3px solid white; */
   display: flex;
   flex-direction: column;
   align-items: center;

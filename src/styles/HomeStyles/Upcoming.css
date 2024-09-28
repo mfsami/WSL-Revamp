@@ -1,3 +1,20 @@
+@font-face {
+  font-family: NEXA-Light;
+  src: url(../../assets/fonts/NEXA-Light/NexaLight.ttf.eot),
+    url(../../assets/fonts/NEXA-Light/NexaLight.ttf.svg),
+    url(../../assets/fonts/NEXA-Light/NexaLight.ttf.woff),
+    url(../../assets/fonts/NEXA-Light/webfonts.ffonts.net.htm),
+    url(../../assets/fonts/NEXA-Light/webfonts.ffonts.net.txt);
+}
+
+@font-face {
+  font-family: OPTICirrus;
+  src: url(../../assets/fonts/OPTICirrus-Medium/OPTICirrus-Medium.ttf.eot),
+    url(../../assets/fonts/OPTICirrus-Medium/OPTICirrus-Medium.ttf.svg),
+    url(../../assets/fonts/OPTICirrus-Medium/OPTICirrus-Medium.ttf.woff),
+    url(../../assets/fonts/OPTICirrus-Medium/webfonts.ffonts.net.htm),
+    url(../../assets/fonts/OPTICirrus-Medium/webfonts.ffonts.net.txt);
+}
 /* Main container */
 
 .container {
@@ -10,7 +27,10 @@
   color: white;
 }
 
+/* UPCOMING MATCHES CONTAINER DONT TOUCH ME */
+
 .upcoming {
+  font-family: "NEXA-Light", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,4 +64,24 @@
 
 .line.right {
   right: 0;
+}
+
+/* DATES */
+
+.datesContainer {
+  font-family: "NEXA-Light", sans-serif;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.currentDateContainer {
+  font-family: "OPTICirrus", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
