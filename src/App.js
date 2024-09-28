@@ -1,8 +1,8 @@
 import "./App.css";
-import FrontBg from "./components/FrontBg";
-import Navbar from "./components/Navbar";
-import Upcoming from "./components/Upcoming";
-import Score from "./components/Score";
+import FrontBg from "./pages/Home/FrontBg";
+import Navbar from "./pages/Home/Navbar";
+import Upcoming from "./pages/Home/Upcoming";
+import Score from "./pages/Home/Score";
 
 function App() {
   return (

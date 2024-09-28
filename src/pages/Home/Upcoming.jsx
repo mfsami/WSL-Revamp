@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Upcoming.css";
+import "../../styles/HomeStyles/Upcoming.css";
 
 const ScoreFront = () => {
   return (

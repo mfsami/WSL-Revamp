@@ -1,6 +1,6 @@
 import React from "react";
-import BGIMAGE from "../assets/images/BG-IMAGE.png";
-import "../styles/FrontBg.css";
+import BGIMAGE from "../../assets/images/BG-IMAGE.png";
+import "../../styles/HomeStyles/FrontBg.css";
 
 const FrontBg = () => {
   return (

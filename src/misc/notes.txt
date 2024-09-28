@@ -1,0 +1,6 @@
+
+Navigating through files and folders: 
+
+./ refers to the current directory. It means "right here, where I am."
+../ refers to the parent directory. It means "go up one level from where I am."
+../../ refers to going up two levels. It means "go up two levels from where I am."

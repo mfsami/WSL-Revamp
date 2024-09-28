@@ -1,10 +1,10 @@
 @font-face {
   font-family: OPTICirrus;
-  src: url(../assets/fonts/OPTICirrus-Medium/OPTICirrus-Medium.ttf.eot),
-    url(../assets/fonts/OPTICirrus-Medium/OPTICirrus-Medium.ttf.svg),
-    url(../assets/fonts/OPTICirrus-Medium/OPTICirrus-Medium.ttf.woff),
-    url(../assets/fonts/OPTICirrus-Medium/webfonts.ffonts.net.htm),
-    url(../assets/fonts/OPTICirrus-Medium/webfonts.ffonts.net.txt);
+  src: url(../../assets/fonts/OPTICirrus-Medium/OPTICirrus-Medium.ttf.eot),
+    url(../../assets/fonts/OPTICirrus-Medium/OPTICirrus-Medium.ttf.svg),
+    url(../../assets/fonts/OPTICirrus-Medium/OPTICirrus-Medium.ttf.woff),
+    url(../../assets/fonts/OPTICirrus-Medium/webfonts.ffonts.net.htm),
+    url(../../assets/fonts/OPTICirrus-Medium/webfonts.ffonts.net.txt);
 }
 
 /* All elements text + image*/
