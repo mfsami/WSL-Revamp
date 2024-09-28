@@ -1,0 +1,10 @@
+.scoreContainer {
+  border: 3px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  max-width: 100vw;
+
+  color: white;
+}
