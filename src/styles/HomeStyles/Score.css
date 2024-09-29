@@ -1,10 +1,53 @@
-.scoreContainer {
+@font-face {
+  font-family: NEXA-Light;
+  src: url(../../assets/fonts/NEXA-Light/NexaLight.ttf.eot),
+    url(../../assets/fonts/NEXA-Light/NexaLight.ttf.svg),
+    url(../../assets/fonts/NEXA-Light/NexaLight.ttf.woff),
+    url(../../assets/fonts/NEXA-Light/webfonts.ffonts.net.htm),
+    url(../../assets/fonts/NEXA-Light/webfonts.ffonts.net.txt);
+}
+
+.scoreCon {
   /* border: 3px solid white; */
+  font-family: "NEXA-Light", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 600px;
   max-width: 100vw;
+  margin-top: 50px;
 
   color: white;
+}
+
+.matchCon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.matchNum {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 18px;
+}
+
+.matchInfo {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 450%;
+}
+
+.matchScore {
+  font-size: 130px;
+  font-weight: bold;
+}
+
+.matchInfoCon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

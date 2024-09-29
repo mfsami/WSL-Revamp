@@ -2,13 +2,13 @@ import React from "react";
 import "../../styles/HomeStyles/Upcoming.css";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
-const ScoreFront = () => {
+const Upcoming = () => {
   return (
     <div className="container">
       {/* Upcoming matches top part dont touch */}
       <div className="upcomingContainer">
         <div className="line left"></div>
-        <p className="upcoming">UPCOMING MATCHES</p>
+        <p className="upcomingS">UPCOMING MATCHES</p>
         <div className="line right"></div>
       </div>
 
@@ -34,4 +34,4 @@ const ScoreFront = () => {
   );
 };
 
-export default ScoreFront;
+export default Upcoming;

@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <Navbar />
       <FrontBg />
-      <Upcoming />
       <Score />
+      <Upcoming />
     </div>
   );
 }
