@@ -22,7 +22,22 @@ const Score = () => {
           <h1 className="matchScore">3:2</h1>
           <p>REFEREE ADNAN EL-TAWIL</p>
         </div>
+
         <h1 className="team2">Valverde Fc</h1>
+      </div>
+
+      <div className="playerGoalsCont">
+        <div className="playerGoals1">
+          <p>ELSAYED 24</p>
+          <p>ASSAF 83</p>
+          <p>JOMHA 43</p>
+        </div>
+
+        <div className="playerGoals2">
+          <p>SANCHEZ 24</p>
+          <p>RONALDO 65</p>
+          <p>PAKARIYA 3 93</p>
+        </div>
       </div>
     </div>
   );
