@@ -1,0 +1,41 @@
+.footerCont {
+  width: 100vw;
+  height: 500px;
+  background-color: white;
+}
+
+.upcomingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 30px;
+}
+
+.line {
+  position: absolute;
+  border-bottom: 1px solid rgb(145, 145, 145);
+  width: 40%;
+  height: 3%;
+}
+
+.line.left {
+  left: 0;
+}
+
+.line.right {
+  right: 0;
+}
+
+.topFooterCont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 50px; */
+}
+
+.footerLogo {
+  margin-top: 30px;
+  width: 70px;
+  height: auto;
+}
