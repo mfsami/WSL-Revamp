@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   height: 96px;
-  max-width: 1240px;
+  max-width: 100vw;
   margin-left: auto;
   margin-right: auto;
   padding-left: auto;
@@ -14,6 +14,11 @@
 .logoTextContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-left: 450px;
+  padding-right: 80px;
+  height: 100%;
+  border-right: 1px solid rgb(45, 45, 45);
 }
 
 .logoNav {
@@ -23,9 +28,9 @@
 }
 
 .logoNav img {
-  width: 55px;
+  width: 70px;
   margin-left: 8px;
-  margin-left: 8px;
+  margin-right: 15px;
 }
 
 .textCol {
@@ -45,13 +50,20 @@
   width: 100%;
   color: white;
 }
+
+.pagesNav {
+  font-weight: 500;
+  border-top: 1px solid rgb(45, 45, 45);
+  padding-right: 300px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
 /* 
 .pagesNav {
   
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
-  border-left: 1px solid rgb(145, 145, 145);
-  padding-left: 450px;
+  
+  
 } */
