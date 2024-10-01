@@ -16,10 +16,14 @@
   height: 100vh;
 } */
 
-/* Big background image */
+.frontBgCont {
+  width: 100vw;
+}
+
 .BGimg {
   width: 100vw;
 }
+/* Big background image */
 
 /* Container that holds FIGHT WITH WSL*/
 .textContainer {

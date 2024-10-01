@@ -4,7 +4,7 @@ import "../../styles/HomeStyles/FrontBg.css";
 
 const FrontBg = () => {
   return (
-    <div>
+    <div className="frontBgCont">
       <img className="BGimg" src={BGIMAGE} alt="/" />
       {/* <div className="textContainer">
         <h1 className="FIGHT">Fight</h1>
