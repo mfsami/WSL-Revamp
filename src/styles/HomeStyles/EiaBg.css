@@ -1,7 +1,43 @@
+@font-face {
+  font-family: NEXA-Light;
+  src: url(../../assets/fonts/NEXA-Light/NexaLight.ttf.eot),
+    url(../../assets/fonts/NEXA-Light/NexaLight.ttf.svg),
+    url(../../assets/fonts/NEXA-Light/NexaLight.ttf.woff),
+    url(../../assets/fonts/NEXA-Light/webfonts.ffonts.net.htm),
+    url(../../assets/fonts/NEXA-Light/webfonts.ffonts.net.txt);
+}
+
 .EiaBgCont {
   width: 100vw;
+  position: relative;
+  display: inline-block;
 }
 
 .eiaBGimg {
+  display: block;
   width: 100vw;
+}
+
+.locationText {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  color: white;
+
+  line-height: 0.75;
+  text-align: left;
+}
+
+.locationText p {
+  font-family: "NEXA-Light", sans-serif;
+  font-size: 25px;
+  margin: 0;
+}
+
+.locationText h1 {
+  font-size: 90px;
+  font-weight: bold;
+  margin: 10px 0;
+  font-weight: 800;
 }
