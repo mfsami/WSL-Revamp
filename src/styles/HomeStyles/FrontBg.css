@@ -7,66 +7,42 @@
     url(../../assets/fonts/OPTICirrus-Medium/webfonts.ffonts.net.txt);
 }
 
-/* All elements text + image*/
-/* .container {
-  position: relative;
-  text-align: center;
-  color: white;
-  width: 100vw;
-  height: 100vh;
-} */
-
 .frontBgCont {
   width: 100vw;
+  position: relative;
+  display: inline-block;
 }
 
 .BGimg {
+  display: block;
   width: 100vw;
 }
 /* Big background image */
 
 /* Container that holds FIGHT WITH WSL*/
 .textContainer {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  align-items: start;
-  text-shadow: 2px 2px 5px black;
+  font-family: "OPTICirrus", sans-serif;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  transform: translateY(-50%);
+  color: white;
+
+  line-height: 0.8;
+  text-align: left;
 }
 
-/* Text individual elements*/
-/* 
-.FIGHT {
-  font: bold;
-  color: white;
-  font-size: 100px;
-  font-family: "OPTICirrus", sans-serif;
-
-  margin: 0;
-  position: absolute;
-  top: 50px;
-  left: 280px;
+.textContainer h1 {
+  font-size: 150px;
+  margin: 10px 0;
 }
 
-.WITH {
-  font: bold;
-  color: white;
-  font-size: 100px;
-  font-family: "OPTICirrus", sans-serif;
-
-  margin: 0;
+.redLine {
+  z-index: -1;
   position: absolute;
-  top: 150px;
-  left: 280px;
+  top: 19%;
+  left: -10%;
+  width: 400px;
+  height: 20px;
+  background-color: red;
 }
-.WSL {
-  font: bold;
-  color: white;
-  font-size: 100px;
-  font-family: "OPTICirrus", sans-serif;
-
-  margin: 0;
-  position: absolute;
-  top: 250px;
-  left: 280px;
-} */
