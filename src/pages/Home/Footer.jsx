@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <div className="footerCont">
       <div className="topFooterCont">
-        <div className="lineFoot left"></div>
+        <div className="lineFoot2 left"></div>
         <img className="footerLogo" src={NOTEXTLOGOGREY} alt="/" />
-        <div className="lineFoot right"></div>
+        <div className="lineFoot2 right"></div>
       </div>
       <div className="footerLogosCont">
         <img className="footerLogosImg" src={footerLogos} alt="/" />

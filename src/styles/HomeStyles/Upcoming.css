@@ -43,25 +43,25 @@
   font-size: 18px;
 }
 
-.topFooterCont {
+.upcomingContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   height: 30px;
 }
 
-.lineFoot {
+.line {
   position: absolute;
   border-bottom: 1px solid rgb(145, 145, 145);
   width: 40%;
   height: 3%;
 }
 
-.lineFoot.left {
+.line.left {
   left: 0;
 }
 
-.lineFoot.right {
+.line.right {
   right: 0;
 }
 
