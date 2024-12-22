@@ -67,9 +67,7 @@ const TeamPage = () => {
     <div className="min-h-screen bg-[#1a1a1a]">
       <Navbar />
 
-      <main className="container mx-auto px-4 py-8 mb-16">
-        <h1 className="text-white text-3xl font-bold mb-8">Teams</h1>
-
+      <main className="container mx-auto px-4 py-8 mb-16 mt-20">
         {/* Team Selection */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mb-8">
           {teams.map((team) => (
