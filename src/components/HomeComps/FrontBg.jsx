@@ -6,10 +6,10 @@ const FrontBg = () => {
   return (
     <div className="frontBgCont">
       <div className="textContainer">
-        <h1>Fight</h1>
+        {/* <h1>Fight</h1>
         <div className="redLine"></div>
         <h1>with</h1>
-        <h1>WSL</h1>
+        <h1>WSL</h1> */}
       </div>
       <img className="BGimg" src={BGIMAGE} alt="/" />
     </div>

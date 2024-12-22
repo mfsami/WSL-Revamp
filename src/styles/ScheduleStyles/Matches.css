@@ -1,15 +1,6 @@
-@font-face {
-  font-family: NEXA-Light;
-  src: url(../../assets/fonts/NEXA-Light/NexaLight.ttf.eot),
-    url(../../assets/fonts/NEXA-Light/NexaLight.ttf.svg),
-    url(../../assets/fonts/NEXA-Light/NexaLight.ttf.woff),
-    url(../../assets/fonts/NEXA-Light/webfonts.ffonts.net.htm),
-    url(../../assets/fonts/NEXA-Light/webfonts.ffonts.net.txt);
-}
-
 .matchesConMain {
   font-size: 14px;
-  font-family: NEXA-Light;
+  font-weight: 700;
 
   display: flex;
   flex-direction: column;
@@ -38,6 +29,7 @@
   align-items: center;
   color: white;
   gap: 2rem;
+  font-weight: 500;
 }
 
 .dateTime {

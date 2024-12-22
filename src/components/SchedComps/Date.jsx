@@ -6,13 +6,13 @@ const Date = () => {
       <div className="dateCon">
         <h1>Week</h1>
         <div className="dateNum">
-          <p>01</p>
-          <p className="text-white">02</p>
+          <p className="text-white">01</p>
+          <p>02</p>
           <p>03</p>
         </div>
         <div className="dateNum">
-          <p>Tues</p>
-          <p className="text-white">Wed</p>
+          <p className="text-white">Tues</p>
+          <p>Wed</p>
           <p>Thurs</p>
         </div>
       </div>

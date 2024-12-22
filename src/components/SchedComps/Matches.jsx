@@ -11,6 +11,7 @@ const Matches = () => {
             <span>VS</span>
             <h1>VALVERDE FC</h1>
           </div>
+
           <div className="dateTime">
             <h1 className="date-box">12/26</h1>
             <h1>8:00 PM</h1>

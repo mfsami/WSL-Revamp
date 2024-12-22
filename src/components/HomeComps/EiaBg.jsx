@@ -6,9 +6,9 @@ const EiaBg = () => {
   return (
     <div className="EiaBgCont">
       <div class="locationText">
-        <p>At the</p>
-        <h1>Bernabeu</h1>
-        <h1>Academy</h1>
+        <p>At</p>
+        <h1>Servus</h1>
+        <h1>Place</h1>
         {/* <p>Edmonton</p> */}
       </div>
       <img className="eiaBGimg" src={EIA} alt="/" />

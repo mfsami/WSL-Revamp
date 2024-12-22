@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="logoNav">
           <img src={NOTEXTLOGO} alt="/" />
           <div className="textCol">
-            <h1 className="textCol ">WINTER SOCCER LEAGUE</h1>
+            <h1 className="textCol">WINTER SOCCER LEAGUE</h1>
             <p className="textCol">OFFICIAL SITE</p>
           </div>
         </div>
@@ -17,25 +17,25 @@ const Navbar = () => {
       <div className="pagesNav">
         <ul className="hidden md:flex">
           {/* Use the Link component to route to different pages */}
-          <li className="p-4">
+          <li className="p-4 font-semibold">
             <Link to="/">HOME</Link>
           </li>
-          <li className="p-4">
+          <li className="p-4 font-semibold">
             <Link to="/teams">TEAMS</Link>
           </li>
-          <li className="p-4">
+          <li className="p-4 font-semibold">
             <Link to="/rankings">RANKINGS</Link>
           </li>
-          <li className="p-4">
+          <li className="p-4 font-semibold">
             <Link to="/Stats">STATS</Link>
           </li>
-          <li className="p-4">
+          <li className="p-4 font-semibold">
             <Link to="/schedule">SCHEDULE</Link>
           </li>
-          <li className="p-4">
+          <li className="p-4 font-semibold">
             <Link to="/highlights">HIGHLIGHTS</Link>
           </li>
-          <li className="p-4">
+          <li className="p-4 font-semibold">
             <Link to="/awards">AWARDS</Link>
           </li>
         </ul>
