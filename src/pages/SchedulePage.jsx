@@ -63,57 +63,73 @@ const SchedulePage = () => {
   );
 
   return (
-    <div className="min-h-screen bg-[#1a1a1a]">
+    <div className="min-h-screen bg-[#161616]">
       <Navbar />
 
-      <main className="container mx-auto px-4 py-12 mb-16">
+      <main className="container mx-auto px-4 py-12 mb-16 max-w-screen-lg">
         {/* Filters Row */}
-        <div className="flex justify-center gap-6 mb-12">
+        <div className="flex flex-wrap justify-center gap-6 mb-12">
           {/* Year Selector */}
-          <div className="flex items-center gap-2">
-            <label className="text-gray-400 font-semibold">Year:</label>
-            <select
-              value={selectedYear}
-              onChange={(e) => setSelectedYear(e.target.value)}
-              className="px-4 py-2 rounded-lg bg-[#2a2a2a] text-white font-semibold transition-all duration-300 hover:bg-[#3a3a3a]">
-              {years.map((year) => (
-                <option key={year} value={year}>
-                  {year}
-                </option>
-              ))}
-            </select>
+          <div className="relative inline-block">
+            <div className="relative">
+              <select
+                value={selectedYear}
+                onChange={(e) => setSelectedYear(e.target.value)}
+                className="px-6 py-3 pr-10 rounded-lg font-semibold bg-[#2a2a2a] text-white appearance-none w-full cursor-pointer transition-all duration-300 hover:bg-[#3a3a3a]">
+                {years.map((year) => (
+                  <option key={year} value={year}>
+                    {year}
+                  </option>
+                ))}
+              </select>
+              <span
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
+                style={{ fontSize: "1.5rem", lineHeight: "1rem" }}>
+                &#9662;
+              </span>
+            </div>
           </div>
 
           {/* Week Selector */}
-          <div className="flex items-center gap-2">
-            <label className="text-gray-400 font-semibold">Week:</label>
-            <select
-              value={selectedWeek}
-              onChange={(e) => setSelectedWeek(Number(e.target.value))}
-              className="px-4 py-2 rounded-lg bg-[#2a2a2a] text-white font-semibold transition-all duration-300 hover:bg-[#3a3a3a]">
-              {weeks.map((week) => (
-                <option key={week.number} value={week.number}>
-                  Week {week.number}
-                </option>
-              ))}
-            </select>
+          <div className="relative inline-block">
+            <div className="relative">
+              <select
+                value={selectedYear}
+                onChange={(e) => setSelectedYear(e.target.value)}
+                className="px-6 py-3 pr-10 rounded-lg font-semibold bg-[#2a2a2a] text-white appearance-none w-full cursor-pointer transition-all duration-300 hover:bg-[#3a3a3a]">
+                {years.map((year) => (
+                  <option key={year} value={year}>
+                    {year}
+                  </option>
+                ))}
+              </select>
+              <span
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
+                style={{ fontSize: "1.5rem", lineHeight: "1rem" }}>
+                &#9662;
+              </span>
+            </div>
           </div>
 
           {/* Day Selector */}
-          <div className="flex items-center gap-2">
-            <label className="text-gray-400 font-semibold">Day:</label>
-            <select
-              value={selectedDay}
-              onChange={(e) => setSelectedDay(e.target.value)}
-              className="px-4 py-2 rounded-lg bg-[#2a2a2a] text-white font-semibold transition-all duration-300 hover:bg-[#3a3a3a]">
-              {weeks
-                .find((week) => week.number === selectedWeek)
-                ?.days.map((day) => (
-                  <option key={day} value={day}>
-                    {day}
+          <div className="relative inline-block">
+            <div className="relative">
+              <select
+                value={selectedYear}
+                onChange={(e) => setSelectedYear(e.target.value)}
+                className="px-6 py-3 pr-10 rounded-lg font-semibold bg-[#2a2a2a] text-white appearance-none w-full cursor-pointer transition-all duration-300 hover:bg-[#3a3a3a]">
+                {years.map((year) => (
+                  <option key={year} value={year}>
+                    {year}
                   </option>
                 ))}
-            </select>
+              </select>
+              <span
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
+                style={{ fontSize: "1.5rem", lineHeight: "1rem" }}>
+                &#9662;
+              </span>
+            </div>
           </div>
         </div>
 
@@ -123,7 +139,7 @@ const SchedulePage = () => {
             filteredMatches.map((match) => (
               <div
                 key={match.id}
-                className="bg-[#212121] rounded-lg p-6 transition-transform duration-300 hover:transform hover:scale-[1.01] max-w-7xl mx-auto">
+                className="bg-[#1a1a1a] rounded-lg p-6 hover:shadow-md transition-shadow max-w-7xl mx-auto">
                 <div className="flex justify-between items-center">
                   <div className="flex-1 flex flex-col items-center text-center min-w-[250px]">
                     <div className="text-white font-semibold text-lg whitespace-nowrap">

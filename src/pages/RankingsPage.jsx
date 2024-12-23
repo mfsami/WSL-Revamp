@@ -110,11 +110,11 @@ const RankingsPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#1a1a1a]">
+    <div className="min-h-screen bg-[#161616]">
       <Navbar />
 
-      <main className="container mx-auto px-4 py-8 mb-16 mt-16">
-        <div className="bg-[#2a2a2a] rounded-lg p-6 overflow-x-auto">
+      <main className="container mx-auto px-4 py-8 mb-16 mt-16 max-w-screen-lg">
+        <div className="bg-[#1a1a1a] rounded-lg p-6 overflow-x-auto">
           <table className="w-full">
             <thead>
               <tr className="text-gray-400 border-b border-gray-700">

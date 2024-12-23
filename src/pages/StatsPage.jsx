@@ -433,10 +433,10 @@ const StatsPage = () => {
   })();
 
   return (
-    <div className="min-h-screen bg-[#1a1a1a]">
+    <div className="min-h-screen bg-[#161616]">
       <Navbar />
 
-      <main className="container mx-auto px-4 py-8 mb-16">
+      <main className="container mx-auto px-4 py-8 mb-16 max-w-screen-lg">
         {/* Navigation Row */}
         <div className="flex flex-col items-center gap-6 mb-8">
           {/* Filter Row */}
@@ -444,27 +444,30 @@ const StatsPage = () => {
             <label className="text-gray-400 font-semibold mr-4">
               Filter by Team:
             </label>
-            <select
-              value={selectedTeam}
-              onChange={(e) => {
-                const value = e.target.value;
-                setSelectedTeam(value);
-                if (value === "all") {
-                  setSelectedStatType("players"); // Default to "players" when selecting "All Players"
-                }
-              }}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 whitespace-nowrap appearance-none ${
-                selectedTeam !== "all"
-                  ? "bg-[#2a2a2a] text-white"
-                  : "bg-[#2a2a2a] text-gray-400 hover:bg-[#3a3a3a]"
-              }`}>
-              <option value="all">All Players</option>
-              {teams.map((team) => (
-                <option key={team} value={team}>
-                  {team}
-                </option>
-              ))}
-            </select>
+            <div className="relative">
+              <select
+                value={selectedTeam}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  setSelectedTeam(value);
+                  if (value === "all") {
+                    setSelectedStatType("players"); // Default to "players" when selecting "All Players"
+                  }
+                }}
+                className={`px-6 py-3 pr-10 rounded-lg font-semibold bg-[#2a2a2a] text-white transition-all duration-300 whitespace-nowrap appearance-none hover:bg-[#3a3a3a]`}>
+                <option value="all">All Players</option>
+                {teams.map((team) => (
+                  <option key={team} value={team}>
+                    {team}
+                  </option>
+                ))}
+              </select>
+              <span
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
+                style={{ fontSize: "1.5rem", lineHeight: "1rem" }}>
+                &#9662;
+              </span>
+            </div>
           </div>
 
           {/* Buttons Row */}
@@ -503,7 +506,7 @@ const StatsPage = () => {
         </div>
 
         {/* Stats Table */}
-        <div className="bg-[#2a2a2a] rounded-lg p-6 overflow-x-auto">
+        <div className="bg-[#1a1a1a] rounded-lg p-6 overflow-x-auto">
           <table className="w-full">
             <thead>
               <tr className="text-gray-400 border-b border-gray-700">

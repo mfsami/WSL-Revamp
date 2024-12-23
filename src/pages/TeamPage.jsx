@@ -81,10 +81,10 @@ const TeamPage = () => {
   const [selectedTeam, setSelectedTeam] = useState(teams[0]);
 
   return (
-    <div className="min-h-screen bg-[#1a1a1a]">
+    <div className="min-h-screen bg-[#161616]">
       <Navbar />
 
-      <main className="container mx-auto px-4 py-8 mb-16 mt-20">
+      <main className="container max-w-screen-md mx-auto px-4 py-8 mb-16 mt-20">
         {/* Team Selection */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
           {teams.map((team) => (
@@ -92,8 +92,8 @@ const TeamPage = () => {
               key={team.name}
               className={`p-4 rounded-lg cursor-pointer transition-all duration-300 ${
                 selectedTeam.name === team.name
-                  ? "bg-red-600"
-                  : "bg-[#2a2a2a] hover:bg-[#3a3a3a]"
+                  ? "bg-[#424242]"
+                  : "bg-[#1a1a1a] hover:bg-[#222222]"
               }`}
               onClick={() => setSelectedTeam(team)}>
               <div className="flex items-center space-x-3">
@@ -114,7 +114,7 @@ const TeamPage = () => {
         </div>
 
         {/* Team Details */}
-        <div className="bg-[#2a2a2a] rounded-lg p-6">
+        <div className="bg-[#1a1a1a] rounded-lg p-6">
           <div className="flex items-center space-x-6 mb-8">
             {/* Large Circle with Selected Team Logo */}
             <div className="w-24 h-24 bg-[#1a1a1a] rounded-full flex items-center justify-center overflow-hidden">
@@ -129,7 +129,7 @@ const TeamPage = () => {
                 {selectedTeam.name}
               </h3>
               <p className="text-gray-400">
-                Squad Size: {selectedTeam.players.length} players
+                {selectedTeam.players.length} players
               </p>
             </div>
           </div>
@@ -139,7 +139,7 @@ const TeamPage = () => {
             {selectedTeam.players.map((player) => (
               <div
                 key={`${player.name}-${player.number}`}
-                className="bg-[#3a3a3a] rounded-lg p-4 hover:bg-[#4a4a4a] transition-colors duration-300">
+                className="bg-[#161616] rounded-lg p-4 transition-colors duration-300">
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-white font-semibold">{player.name}</p>
