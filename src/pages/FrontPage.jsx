@@ -82,8 +82,8 @@ const LandingPage = () => {
             WINTER SOCCER LEAGUE
           </h1>
           <p className="text-lg lg:text-2xl text-gray-300 mb-8 max-w-2xl">
-            Experience the thrill of winter soccer league where champions are
-            made and legends are born.
+            Welcome to the second annual winter soccer league, where champions
+            are made and legends are born.
           </p>
           <div className="flex space-x-4">
             <Link
