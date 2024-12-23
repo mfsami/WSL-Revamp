@@ -8,8 +8,8 @@
 }
 
 .footerCont {
-  width: 100vw;
-  height: 700px;
+  width: auto;
+  height: auto;
   background-color: white;
   display: flex;
   flex-direction: column;

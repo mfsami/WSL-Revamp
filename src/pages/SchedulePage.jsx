@@ -3,111 +3,124 @@ import Navbar from "../components/HomeComps/Navbar";
 import Footer from "../components/HomeComps/Footer";
 
 const SchedulePage = () => {
+  const [selectedYear, setSelectedYear] = useState("2024-2025");
   const [selectedWeek, setSelectedWeek] = useState(1);
+  const [selectedDay, setSelectedDay] = useState("Dec 23");
 
+  const years = ["2023-2024", "2024-2025"];
   const weeks = [
-    { number: "01", day: "Mon" },
-    { number: "02", day: "Thurs" },
-    { number: "03", day: "Sat" },
+    { number: 1, days: ["Dec 23", "Dec 26", "Dec 28"] },
+    { number: 2, days: ["Dec 29", "Dec 30", "Jan 2"] },
   ];
 
   const placeholderMatches = [
+    // Week 1, Day "Dec 23" matches
     {
-      id: 1,
+      id: "2024-2025-1-Dec 23-1",
+      year: "2024-2025",
       week: 1,
-      homeTeam: "HOME TEAM 1",
-      awayTeam: "AWAY TEAM 1",
+      day: "Dec 23",
+      homeTeam: "Team A",
+      awayTeam: "Team B",
       homeScore: "-",
       awayScore: "-",
-      date: "MM/DD",
-      time: "00:00 PM",
+      date: "Dec 23",
+      time: "01:00 PM",
     },
     {
-      id: 2,
+      id: "2024-2025-1-Dec 23-2",
+      year: "2024-2025",
       week: 1,
-      homeTeam: "HOME TEAM 2",
-      awayTeam: "AWAY TEAM 2",
+      day: "Dec 23",
+      homeTeam: "Team C",
+      awayTeam: "Team D",
       homeScore: "-",
       awayScore: "-",
-      date: "MM/DD",
-      time: "00:00 PM",
+      date: "Dec 23",
+      time: "03:00 PM",
     },
     {
-      id: 3,
-      week: 2,
-      homeTeam: "HOME TEAM 3",
-      awayTeam: "AWAY TEAM 3",
-      homeScore: "-",
-      awayScore: "-",
-      date: "MM/DD",
-      time: "00:00 PM",
-    },
-    {
-      id: 4,
-      week: 3,
-      homeTeam: "HOME TEAM 4",
-      awayTeam: "AWAY TEAM 4",
-      homeScore: "-",
-      awayScore: "-",
-      date: "MM/DD",
-      time: "00:00 PM",
-    },
-    {
-      id: 4,
+      id: "2024-2025-1-Dec 23-3",
+      year: "2024-2025",
       week: 1,
-      homeTeam: "HOME TEAM 4",
-      awayTeam: "AWAY TEAM 4",
+      day: "Dec 23",
+      homeTeam: "Team E",
+      awayTeam: "Team F",
       homeScore: "-",
       awayScore: "-",
-      date: "MM/DD",
-      time: "00:00 PM",
+      date: "Dec 23",
+      time: "05:00 PM",
     },
+    // Add more matches for "Dec 26", "Dec 28", etc., for Week 1
+    // Add matches for Week 2 ("Dec 29", "Dec 30", "Jan 2")
   ];
+
+  const filteredMatches = placeholderMatches.filter(
+    (match) =>
+      match.year === selectedYear &&
+      match.week === selectedWeek &&
+      match.day === selectedDay
+  );
 
   return (
     <div className="min-h-screen bg-[#1a1a1a]">
       <Navbar />
 
       <main className="container mx-auto px-4 py-12 mb-16">
-        {/* Week Selector */}
-        <div className="flex flex-col items-center mb-12">
-          <h2 className="text-gray-400 font-semibold mb-4">
-            Week {selectedWeek}
-          </h2>
-          <div className="flex gap-6 mb-2">
-            {weeks.map((week) => (
-              <button
-                key={week.number}
-                onClick={() => setSelectedWeek(parseInt(week.number))}
-                className={`w-10 h-10 rounded-md font-semibold transition-all duration-300 ${
-                  selectedWeek === parseInt(week.number)
-                    ? "bg-red-600 text-white"
-                    : "bg-[#2a2a2a] text-gray-400 hover:bg-[#3a3a3a]"
-                }`}>
-                {week.number}
-              </button>
-            ))}
+        {/* Filters Row */}
+        <div className="flex justify-center gap-6 mb-12">
+          {/* Year Selector */}
+          <div className="flex items-center gap-2">
+            <label className="text-gray-400 font-semibold">Year:</label>
+            <select
+              value={selectedYear}
+              onChange={(e) => setSelectedYear(e.target.value)}
+              className="px-4 py-2 rounded-lg bg-[#2a2a2a] text-white font-semibold transition-all duration-300 hover:bg-[#3a3a3a]">
+              {years.map((year) => (
+                <option key={year} value={year}>
+                  {year}
+                </option>
+              ))}
+            </select>
           </div>
-          <div className="flex gap-6">
-            {weeks.map((week) => (
-              <div
-                key={week.day}
-                className={`w-12 text-center font-semibold ${
-                  selectedWeek === parseInt(week.number)
-                    ? "text-white"
-                    : "text-gray-400"
-                }`}>
-                {week.day}
-              </div>
-            ))}
+
+          {/* Week Selector */}
+          <div className="flex items-center gap-2">
+            <label className="text-gray-400 font-semibold">Week:</label>
+            <select
+              value={selectedWeek}
+              onChange={(e) => setSelectedWeek(Number(e.target.value))}
+              className="px-4 py-2 rounded-lg bg-[#2a2a2a] text-white font-semibold transition-all duration-300 hover:bg-[#3a3a3a]">
+              {weeks.map((week) => (
+                <option key={week.number} value={week.number}>
+                  Week {week.number}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Day Selector */}
+          <div className="flex items-center gap-2">
+            <label className="text-gray-400 font-semibold">Day:</label>
+            <select
+              value={selectedDay}
+              onChange={(e) => setSelectedDay(e.target.value)}
+              className="px-4 py-2 rounded-lg bg-[#2a2a2a] text-white font-semibold transition-all duration-300 hover:bg-[#3a3a3a]">
+              {weeks
+                .find((week) => week.number === selectedWeek)
+                ?.days.map((day) => (
+                  <option key={day} value={day}>
+                    {day}
+                  </option>
+                ))}
+            </select>
           </div>
         </div>
 
         {/* Matches */}
         <div className="space-y-4">
-          {placeholderMatches
-            .filter((match) => match.week === selectedWeek)
-            .map((match) => (
+          {filteredMatches.length > 0 ? (
+            filteredMatches.map((match) => (
               <div
                 key={match.id}
                 className="bg-[#212121] rounded-lg p-6 transition-transform duration-300 hover:transform hover:scale-[1.01] max-w-7xl mx-auto">
@@ -139,12 +152,10 @@ const SchedulePage = () => {
                   </div>
                 </div>
               </div>
-            ))}
-
-          {placeholderMatches.filter((match) => match.week === selectedWeek)
-            .length === 0 && (
+            ))
+          ) : (
             <div className="text-center text-gray-400 py-12">
-              No matches scheduled for this week
+              Still working on this. Get out of here pal
             </div>
           )}
         </div>

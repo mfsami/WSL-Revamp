@@ -5,6 +5,7 @@ import SchedulePage from "./pages/SchedulePage";
 import TeamPage from "./pages/TeamPage";
 import StatsPage from "./pages/StatsPage";
 import RankingsPage from "./pages/RankingsPage";
+import HighlightsPage from "./pages/HighlightsPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/teams" element={<TeamPage />} />
         <Route path="/stats" element={<StatsPage />} />
         <Route path="/rankings" element={<RankingsPage />} />
+        <Route path="/highlights" element={<HighlightsPage />} />
       </Routes>
     </Router>
   );

@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footerLogosCont">
         <img className="footerLogosImg" src={footerLogos} alt="/" />
       </div>
-      <div className="secondFootCont"></div>
+      {/* <div className="secondFootCont"></div> */}
       <div className="bottomFootCont">
         <p>@WSL 2025 CREATED BY SAMI-ELSAYED</p>
       </div>
