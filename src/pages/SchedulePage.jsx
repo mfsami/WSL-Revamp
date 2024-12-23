@@ -6,9 +6,9 @@ const SchedulePage = () => {
   const [selectedWeek, setSelectedWeek] = useState(1);
 
   const weeks = [
-    { number: "01", day: "Tues" },
-    { number: "02", day: "Wed" },
-    { number: "03", day: "Thurs" },
+    { number: "01", day: "Mon" },
+    { number: "02", day: "Thurs" },
+    { number: "03", day: "Sat" },
   ];
 
   const placeholderMatches = [

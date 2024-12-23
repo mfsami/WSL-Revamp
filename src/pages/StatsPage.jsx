@@ -11,10 +11,11 @@ const StatsPage = () => {
   });
 
   const players = [
+    // Goalies
     {
-      name: "Player 1",
+      name: "Adam Tanouti",
       team: "TEAM A",
-      position: "FWD",
+      position: "GK",
       goals: 0,
       assists: 0,
       yellowCards: 0,
@@ -22,17 +23,7 @@ const StatsPage = () => {
       cleanSheets: 0,
     },
     {
-      name: "Player 2",
-      team: "TEAM A",
-      position: "MID",
-      goals: 0,
-      assists: 0,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Player 3",
+      name: "Aref El-Tawil",
       team: "TEAM B",
       position: "GK",
       goals: 0,
@@ -42,7 +33,59 @@ const StatsPage = () => {
       cleanSheets: 0,
     },
     {
-      name: "Player 4",
+      name: "Muneer Nazir",
+      team: "TEAM C",
+      position: "GK",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Khaled Al-Kadri",
+      team: "TEAM D",
+      position: "GK",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Adam Zahwee",
+      team: "TEAM E",
+      position: "GK",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Shaheryar Ahsan",
+      team: "TEAM F",
+      position: "GK",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+
+    // Defenders
+    {
+      name: "Mosaab Jomha",
+      team: "TEAM A",
+      position: "DEF",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Bilal Rahal",
       team: "TEAM B",
       position: "DEF",
       goals: 0,
@@ -51,7 +94,300 @@ const StatsPage = () => {
       redCards: 0,
       cleanSheets: 0,
     },
-    // Add more players as needed
+    {
+      name: "Mohamed Al-Turk",
+      team: "TEAM C",
+      position: "DEF",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Mohammed Elkhatib",
+      team: "TEAM D",
+      position: "DEF",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+
+    // Attackers
+    {
+      name: "Sohaib Jomha",
+      team: "TEAM A",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Hussien Al-Turk",
+      team: "TEAM B",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Adnan El-Tayan",
+      team: "TEAM C",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Rayyan Islam",
+      team: "TEAM D",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Mohamed Elmestiri",
+      team: "TEAM E",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Khalid Shaheen",
+      team: "TEAM F",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Redouane Zerqalah",
+      team: "TEAM A",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Abdirahman Sheikhdon",
+      team: "TEAM B",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Jamal Assaf",
+      team: "TEAM C",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+
+    // Both
+    {
+      name: "Adnan El-Tawil",
+      team: "TEAM A",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Zayd Elzein",
+      team: "TEAM B",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Omar Jomha",
+      team: "TEAM C",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Yazan Al Maani",
+      team: "TEAM D",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Motasim Assaf",
+      team: "TEAM E",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Zakariya Assaf",
+      team: "TEAM F",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Ahmed Assaf",
+      team: "TEAM A",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Yaqin Issa",
+      team: "TEAM B",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Sami El-Sayed",
+      team: "TEAM C",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Rehan Khadri",
+      team: "TEAM D",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Taha El-Sayed",
+      team: "TEAM E",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Rahal Rahal",
+      team: "TEAM F",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Huthayfah Jomha",
+      team: "TEAM A",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Yousif Al Mishhedani",
+      team: "TEAM B",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Amir Bensekhria",
+      team: "TEAM C",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Mostafa Heider",
+      team: "TEAM D",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Sohaib Khadri",
+      team: "TEAM E",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Abdullah Aderinto",
+      team: "TEAM F",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
   ];
 
   const statTypes = [
@@ -85,8 +421,14 @@ const StatsPage = () => {
         return sortData(filtered, "goals", "desc");
       case "assists":
         return sortData(filtered, "assists", "desc");
+      case "players":
+        // Default to showing all players if no team is selected
+        return filtered.sort((a, b) => a.name.localeCompare(b.name));
       default:
-        return filtered;
+        // Sort alphabetically if "All Players" is selected
+        return selectedTeam === "all"
+          ? filtered.sort((a, b) => a.name.localeCompare(b.name))
+          : filtered;
     }
   })();
 
@@ -95,27 +437,28 @@ const StatsPage = () => {
       <Navbar />
 
       <main className="container mx-auto px-4 py-8 mb-16">
-        <h1 className="text-white text-3xl font-bold mb-8">
-          Player Statistics
-        </h1>
-
         {/* Navigation Row */}
-        <div className="flex flex-wrap items-center gap-4 mb-8">
-          {/* All Teams Dropdown */}
-          <div className="relative">
+        <div className="flex flex-col items-center gap-6 mb-8">
+          {/* Filter Row */}
+          <div className="flex items-center">
+            <label className="text-gray-400 font-semibold mr-4">
+              Filter by Team:
+            </label>
             <select
               value={selectedTeam}
               onChange={(e) => {
-                setSelectedTeam(e.target.value);
-                setSelectedStatType("all"); // Reset stat type filter when switching teams
+                const value = e.target.value;
+                setSelectedTeam(value);
+                if (value === "all") {
+                  setSelectedStatType("players"); // Default to "players" when selecting "All Players"
+                }
               }}
               className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 whitespace-nowrap appearance-none ${
                 selectedTeam !== "all"
                   ? "bg-[#2a2a2a] text-white"
                   : "bg-[#2a2a2a] text-gray-400 hover:bg-[#3a3a3a]"
               }`}>
-              <option value="all">All Teams</option>
-
+              <option value="all">All Players</option>
               {teams.map((team) => (
                 <option key={team} value={team}>
                   {team}
@@ -124,21 +467,39 @@ const StatsPage = () => {
             </select>
           </div>
 
-          {statTypes.map((type) => (
+          {/* Buttons Row */}
+          <div className="flex flex-wrap justify-center items-center gap-4">
+            {/* Players Button */}
             <button
-              key={type.id}
               onClick={() => {
-                setSelectedStatType(type.id);
-                setSelectedTeam("all"); // Reset team filter when switching stat type
+                setSelectedStatType("players");
+                setSelectedTeam("all"); // Reset team filter when clicking "Players"
               }}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 whitespace-nowrap ${
-                selectedStatType === type.id && selectedTeam === "all"
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                selectedStatType === "players"
                   ? "bg-red-600 text-white"
                   : "bg-[#2a2a2a] text-gray-400 hover:bg-[#3a3a3a]"
               }`}>
-              {type.label}
+              Players
             </button>
-          ))}
+
+            {/* Stat Types Buttons */}
+            {statTypes.map((type) => (
+              <button
+                key={type.id}
+                onClick={() => {
+                  setSelectedStatType(type.id);
+                  setSelectedTeam("all"); // Reset team filter when switching stat type
+                }}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                  selectedStatType === type.id
+                    ? "bg-red-600 text-white"
+                    : "bg-[#2a2a2a] text-gray-400 hover:bg-[#3a3a3a]"
+                }`}>
+                {type.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Stats Table */}

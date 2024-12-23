@@ -1,13 +1,19 @@
 import React from "react";
 import Navbar from "../components/HomeComps/Navbar";
 import Footer from "../components/HomeComps/Footer";
+import SohaibLogo from "../assets/images/logos/SOHAIB.jpg";
+import ZakLogo from "../assets/images/logos/ZAKLOGO.png";
+import AdnanLogo from "../assets/images/logos/ADNAN.jpg";
+import ColeLogo from "../assets/images/logos/cole.jpg";
+import PedriLogo from "../assets/images/logos/pedri.jpg";
+import BombsLogo from "../assets/images/logos/bombs.jpg";
 
 const RankingsPage = () => {
   const teamRankings = [
     {
       rank: 1,
       name: "DEMBELE FC",
-      logo: "/team-logos/dembele.png",
+      logo: SohaibLogo,
       gamesPlayed: 0,
       wins: 0,
       draws: 0,
@@ -21,7 +27,7 @@ const RankingsPage = () => {
     {
       rank: 2,
       name: "DABEAST FC",
-      logo: "/team-logos/haaland.png",
+      logo: ZakLogo,
       gamesPlayed: 0,
       wins: 0,
       draws: 0,
@@ -35,7 +41,7 @@ const RankingsPage = () => {
     {
       rank: 3,
       name: "VALVERDE FC",
-      logo: "/team-logos/mbappe.png",
+      logo: AdnanLogo,
       gamesPlayed: 0,
       wins: 0,
       draws: 0,
@@ -49,7 +55,7 @@ const RankingsPage = () => {
     {
       rank: 4,
       name: "BOMBS FC",
-      logo: "/team-logos/valverde.png",
+      logo: BombsLogo,
       gamesPlayed: 0,
       wins: 0,
       draws: 0,
@@ -63,7 +69,21 @@ const RankingsPage = () => {
     {
       rank: 5,
       name: "COLE WORLD FC",
-      logo: "/team-logos/bellingham.png",
+      logo: ColeLogo,
+      gamesPlayed: 0,
+      wins: 0,
+      draws: 0,
+      losses: 0,
+      goalsFor: 0,
+      goalsAgainst: 0,
+      goalDifference: 0,
+      points: 0,
+      form: ["L", "L", "D", "L", "W"],
+    },
+    {
+      rank: 6,
+      name: "PEDRI FC",
+      logo: PedriLogo,
       gamesPlayed: 0,
       wins: 0,
       draws: 0,
@@ -115,15 +135,15 @@ const RankingsPage = () => {
               {teamRankings.map((team) => (
                 <tr
                   key={team.name}
-                  className="text-white border-b border-gray-700 last:border-0  transition-colors duration-200">
+                  className="text-white border-b border-gray-700 last:border-0 transition-colors duration-200">
                   <td className="py-4 px-4 font-semibold">{team.rank}.</td>
                   <td className="py-4 px-4">
                     <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-[#1a1a1a] rounded-full flex items-center justify-center">
+                      <div className="w-10 h-10 bg-[#1a1a1a] rounded-full flex items-center justify-center overflow-hidden">
                         <img
                           src={team.logo}
-                          alt={``}
-                          className="w-8 h-8 object-contain"
+                          alt={`${team.name} Logo`}
+                          className="w-full h-full object-cover"
                         />
                       </div>
                       <span className="font-semibold">{team.name}</span>

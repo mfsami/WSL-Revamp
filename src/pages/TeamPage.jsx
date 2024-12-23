@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import Navbar from "../components/HomeComps/Navbar";
 import Footer from "../components/HomeComps/Footer";
+import SohaibLogo from "../assets/images/logos/SOHAIB.jpg";
+import ZakLogo from "../assets/images/logos/ZAKLOGO.png";
+import AdnanLogo from "../assets/images/logos/ADNAN.jpg";
+import ColeLogo from "../assets/images/logos/cole.jpg";
+import PedriLogo from "../assets/images/logos/pedri.jpg";
+import BombsLogo from "../assets/images/logos/bombs.jpg";
 
 const TeamPage = () => {
   const teams = [
     {
       name: "DEMBELE FC",
-      logo: "/team-logos/dembele.png",
+      logo: SohaibLogo,
       players: [
         { name: "Player", number: 1, position: "GK" },
         { name: "Player", number: 4, position: "DEF" },
@@ -17,7 +23,7 @@ const TeamPage = () => {
     },
     {
       name: "DABEAST FC",
-      logo: "/team-logos/valverde.png",
+      logo: ZakLogo,
       players: [
         { name: "Player", number: 1, position: "GK" },
         { name: "Player", number: 4, position: "DEF" },
@@ -28,7 +34,7 @@ const TeamPage = () => {
     },
     {
       name: "VALVERDE FC",
-      logo: "/team-logos/haaland.png",
+      logo: AdnanLogo,
       players: [
         { name: "Player", number: 1, position: "GK" },
         { name: "Player", number: 4, position: "DEF" },
@@ -39,7 +45,18 @@ const TeamPage = () => {
     },
     {
       name: "COLE WORLD FC",
-      logo: "/team-logos/mbappe.png",
+      logo: ColeLogo,
+      players: [
+        { name: "Player", number: 1, position: "GK" },
+        { name: "Player", number: 4, position: "DEF" },
+        { name: "Player", number: 10, position: "MID" },
+        { name: "Player", number: 7, position: "FWD" },
+        { name: "Player", number: 11, position: "MID" },
+      ],
+    },
+    {
+      name: "PEDRI FC",
+      logo: PedriLogo,
       players: [
         { name: "Player", number: 1, position: "GK" },
         { name: "Player", number: 4, position: "DEF" },
@@ -50,7 +67,7 @@ const TeamPage = () => {
     },
     {
       name: "BOMBS FC",
-      logo: "/team-logos/bellingham.png",
+      logo: BombsLogo,
       players: [
         { name: "Player", number: 1, position: "GK" },
         { name: "Player", number: 4, position: "DEF" },
@@ -69,7 +86,7 @@ const TeamPage = () => {
 
       <main className="container mx-auto px-4 py-8 mb-16 mt-20">
         {/* Team Selection */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
           {teams.map((team) => (
             <div
               key={team.name}
@@ -80,12 +97,12 @@ const TeamPage = () => {
               }`}
               onClick={() => setSelectedTeam(team)}>
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-[#1a1a1a] rounded-full flex items-center justify-center">
+                {/* Circle with Team Logo */}
+                <div className="w-12 h-12 bg-[#1a1a1a] rounded-full flex items-center justify-center overflow-hidden">
                   <img
                     src={team.logo}
-                    // ADD TEAM LOGOS HERE
-                    alt={``}
-                    className="w-10 h-10 object-contain"
+                    alt={`${team.name} Logo`}
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <h2 className="text-white text-lg font-semibold">
@@ -99,12 +116,12 @@ const TeamPage = () => {
         {/* Team Details */}
         <div className="bg-[#2a2a2a] rounded-lg p-6">
           <div className="flex items-center space-x-6 mb-8">
-            <div className="w-24 h-24 bg-[#1a1a1a] rounded-full flex items-center justify-center">
+            {/* Large Circle with Selected Team Logo */}
+            <div className="w-24 h-24 bg-[#1a1a1a] rounded-full flex items-center justify-center overflow-hidden">
               <img
                 src={selectedTeam.logo}
-                // ADD TEAM LOGOS HERE
-                alt={``}
-                className="w-20 h-20 object-contain"
+                alt={`${selectedTeam.name} Logo`}
+                className="w-full h-full object-cover"
               />
             </div>
             <div>
@@ -118,7 +135,7 @@ const TeamPage = () => {
           </div>
 
           {/* Players Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {selectedTeam.players.map((player) => (
               <div
                 key={`${player.name}-${player.number}`}
