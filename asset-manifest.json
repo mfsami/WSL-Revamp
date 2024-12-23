@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/WSL-Revamp/static/css/main.94d48f06.css",
+    "main.js": "/WSL-Revamp/static/js/main.bcb394f0.js",
+    "static/media/hello.png": "/WSL-Revamp/static/media/hello.fe67de477dc23720a1ec.png",
+    "static/media/ADNAN.jpg": "/WSL-Revamp/static/media/ADNAN.367bcdfb391442e85e2b.jpg",
+    "static/media/ZAKLOGO.png": "/WSL-Revamp/static/media/ZAKLOGO.adf9da8d49394f4081cf.png",
+    "static/media/cole.jpg": "/WSL-Revamp/static/media/cole.fc055cb7673d8fd21fef.jpg",
+    "static/media/pedri.jpg": "/WSL-Revamp/static/media/pedri.091b6e4f6a79ffb6e491.jpg",
+    "static/media/SOHAIB.jpg": "/WSL-Revamp/static/media/SOHAIB.cd5ca3fb2adf5c91b04a.jpg",
+    "static/media/NOTEXTLOGOGREY.png": "/WSL-Revamp/static/media/NOTEXTLOGOGREY.87ad898176daeda3622f.png",
+    "static/media/NOTEXTLOGO.png": "/WSL-Revamp/static/media/NOTEXTLOGO.6ba623f57719be1b9a38.png",
+    "static/media/bombs.jpg": "/WSL-Revamp/static/media/bombs.468d365970ad94911a04.jpg",
+    "static/media/footerLogos.png": "/WSL-Revamp/static/media/footerLogos.2948d2f2e624448a0ad0.png",
+    "index.html": "/WSL-Revamp/index.html",
+    "main.94d48f06.css.map": "/WSL-Revamp/static/css/main.94d48f06.css.map",
+    "main.bcb394f0.js.map": "/WSL-Revamp/static/js/main.bcb394f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94d48f06.css",
+    "static/js/main.bcb394f0.js"
+  ]
+}
