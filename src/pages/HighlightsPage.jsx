@@ -6,6 +6,7 @@ const HighlightsPage = () => {
   return (
     <div>
       <Navbar />
+      <Footer />
     </div>
   );
 };
