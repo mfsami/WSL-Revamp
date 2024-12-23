@@ -27,9 +27,9 @@
 }
 
 .footerLogosImg {
-  width: 55%;
-  max-width: 600px; /* Prevents image from being too large */
-  min-width: 250px; /* Prevents image from shrinking too much */
+  width: 70%;
+  max-width: 900px; /* Prevents image from being too large */
+  min-width: 300px; /* Prevents image from shrinking too much */
   height: auto;
 }
 
@@ -74,8 +74,8 @@
   }
 
   .footerLogosImg {
-    width: 80%; /* Scales down more */
-    max-width: 500px;
+    width: 120%; /* Scales down more */
+    max-width: 100%;
   }
 
   .bottomFootCont p {

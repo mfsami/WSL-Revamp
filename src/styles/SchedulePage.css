@@ -11,13 +11,16 @@
 
 .filters-row {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
   margin-bottom: 2rem;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+  padding: 0 1rem; /* Add some padding for better appearance */
 }
 
 .filter-select {
+  flex-shrink: 0; /* Prevent select elements from shrinking */
   padding: 0.75rem 1rem;
   background-color: #2a2a2a;
   color: white;

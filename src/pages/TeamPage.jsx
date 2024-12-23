@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Navbar from "../components/HomeComps/Navbar";
 import Footer from "../components/HomeComps/Footer";
 import SohaibLogo from "../assets/images/logos/SOHAIB.jpg";
@@ -79,6 +79,13 @@ const TeamPage = () => {
   ];
 
   const [selectedTeam, setSelectedTeam] = useState(teams[0]);
+  const teamDetailsRef = useRef(null);
+
+  const handleTeamClick = (team) => {
+    setSelectedTeam(team);
+    // Smoothly scroll to the team details section
+    teamDetailsRef.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="min-h-screen bg-[#161616]">
@@ -90,7 +97,7 @@ const TeamPage = () => {
           {teams.map((team) => (
             <div
               key={team.name}
-              onClick={() => setSelectedTeam(team)}
+              onClick={() => handleTeamClick(team)}
               className={`p-4 rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105 ${
                 selectedTeam.name === team.name
                   ? "bg-[#424242]"
@@ -113,7 +120,9 @@ const TeamPage = () => {
         </div>
 
         {/* Team Details */}
-        <div className="bg-[#1a1a1a] rounded-lg p-6">
+        <div
+          ref={teamDetailsRef}
+          className="bg-[#1a1a1a] rounded-lg p-6 transition-colors">
           <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-6 mb-8">
             <div className="w-24 h-24 bg-[#1a1a1a] rounded-full overflow-hidden">
               <img
