@@ -15,7 +15,7 @@ const StatsPage = () => {
     // Goalies
     {
       name: "Adam Tanouti",
-      team: "TEAM A",
+      team: "PEDRI FC",
       position: "GK",
       goals: 0,
       assists: 0,
@@ -25,7 +25,7 @@ const StatsPage = () => {
     },
     {
       name: "Aref El-Tawil",
-      team: "TEAM B",
+      team: "DABEAST FC",
       position: "GK",
       goals: 0,
       assists: 0,
@@ -35,7 +35,7 @@ const StatsPage = () => {
     },
     {
       name: "Muneer Nazir",
-      team: "TEAM C",
+      team: "DEMBELE FC",
       position: "GK",
       goals: 0,
       assists: 0,
@@ -43,9 +43,10 @@ const StatsPage = () => {
       redCards: 0,
       cleanSheets: 0,
     },
+
     {
       name: "Khaled Al-Kadri",
-      team: "TEAM D",
+      team: "VALVERDE FC",
       position: "GK",
       goals: 0,
       assists: 0,
@@ -55,7 +56,17 @@ const StatsPage = () => {
     },
     {
       name: "Adam Zahwee",
-      team: "TEAM E",
+      team: "BOMBS FC",
+      position: "GK",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Adam Deeb",
+      team: "BOMBS FC",
       position: "GK",
       goals: 0,
       assists: 0,
@@ -65,7 +76,7 @@ const StatsPage = () => {
     },
     {
       name: "Shaheryar Ahsan",
-      team: "TEAM F",
+      team: "COLE WORLD FC",
       position: "GK",
       goals: 0,
       assists: 0,
@@ -77,7 +88,7 @@ const StatsPage = () => {
     // Defenders
     {
       name: "Mosaab Jomha",
-      team: "TEAM A",
+      team: "DABEAST FC",
       position: "DEF",
       goals: 0,
       assists: 0,
@@ -87,7 +98,17 @@ const StatsPage = () => {
     },
     {
       name: "Bilal Rahal",
-      team: "TEAM B",
+      team: "PEDRI FC",
+      position: "DEF",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Rasheed Jomha",
+      team: "PEDRI FC",
       position: "DEF",
       goals: 0,
       assists: 0,
@@ -97,7 +118,7 @@ const StatsPage = () => {
     },
     {
       name: "Mohamed Al-Turk",
-      team: "TEAM C",
+      team: "BOMBS FC",
       position: "DEF",
       goals: 0,
       assists: 0,
@@ -107,7 +128,18 @@ const StatsPage = () => {
     },
     {
       name: "Mohammed Elkhatib",
-      team: "TEAM D",
+      team: "DABEAST FC",
+      position: "DEF",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+
+    {
+      name: "Mohammed Sadek",
+      team: "PEDRI FC",
       position: "DEF",
       goals: 0,
       assists: 0,
@@ -119,7 +151,7 @@ const StatsPage = () => {
     // Attackers
     {
       name: "Sohaib Jomha",
-      team: "TEAM A",
+      team: "DEMBELE FC",
       position: "FWD",
       goals: 0,
       assists: 0,
@@ -129,7 +161,7 @@ const StatsPage = () => {
     },
     {
       name: "Hussien Al-Turk",
-      team: "TEAM B",
+      team: "COLE WORLD FC",
       position: "FWD",
       goals: 0,
       assists: 0,
@@ -139,7 +171,17 @@ const StatsPage = () => {
     },
     {
       name: "Adnan El-Tayan",
-      team: "TEAM C",
+      team: "COLE WORLD FC",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Adnan Shaban",
+      team: "DEMBELE FC",
       position: "FWD",
       goals: 0,
       assists: 0,
@@ -149,7 +191,7 @@ const StatsPage = () => {
     },
     {
       name: "Rayyan Islam",
-      team: "TEAM D",
+      team: "COLE WORLD FC",
       position: "FWD",
       goals: 0,
       assists: 0,
@@ -159,7 +201,17 @@ const StatsPage = () => {
     },
     {
       name: "Mohamed Elmestiri",
-      team: "TEAM E",
+      team: "PEDRI FC",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Mohamed Anshasi",
+      team: "COLE WORLD FC",
       position: "FWD",
       goals: 0,
       assists: 0,
@@ -169,7 +221,7 @@ const StatsPage = () => {
     },
     {
       name: "Khalid Shaheen",
-      team: "TEAM F",
+      team: "VALVERDE FC",
       position: "FWD",
       goals: 0,
       assists: 0,
@@ -179,7 +231,17 @@ const StatsPage = () => {
     },
     {
       name: "Redouane Zerqalah",
-      team: "TEAM A",
+      team: "PEDRI FC",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Anes Mohammed",
+      team: "BOMBS FC",
       position: "FWD",
       goals: 0,
       assists: 0,
@@ -189,7 +251,27 @@ const StatsPage = () => {
     },
     {
       name: "Abdirahman Sheikhdon",
-      team: "TEAM B",
+      team: "DEMBELE FC",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Abdelrahman Ebeid",
+      team: "VALVERDE FC",
+      position: "FWD",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Mohammed Sheikh Ali",
+      team: "VALVERDE FC",
       position: "FWD",
       goals: 0,
       assists: 0,
@@ -199,7 +281,7 @@ const StatsPage = () => {
     },
     {
       name: "Jamal Assaf",
-      team: "TEAM C",
+      team: "BOMBS FC",
       position: "FWD",
       goals: 0,
       assists: 0,
@@ -211,7 +293,7 @@ const StatsPage = () => {
     // Both
     {
       name: "Adnan El-Tawil",
-      team: "TEAM A",
+      team: "VALVERDE FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -221,7 +303,7 @@ const StatsPage = () => {
     },
     {
       name: "Zayd Elzein",
-      team: "TEAM B",
+      team: "DABEAST FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -231,7 +313,7 @@ const StatsPage = () => {
     },
     {
       name: "Omar Jomha",
-      team: "TEAM C",
+      team: "DEMBELE FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -241,7 +323,7 @@ const StatsPage = () => {
     },
     {
       name: "Yazan Al Maani",
-      team: "TEAM D",
+      team: "VALVERDE FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -250,8 +332,8 @@ const StatsPage = () => {
       cleanSheets: 0,
     },
     {
-      name: "Motasim Assaf",
-      team: "TEAM E",
+      name: "Motassim Assaf",
+      team: "BOMBS FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -261,7 +343,17 @@ const StatsPage = () => {
     },
     {
       name: "Zakariya Assaf",
-      team: "TEAM F",
+      team: "DABEAST FC",
+      position: "BOTH",
+      goals: 0,
+      assists: 0,
+      yellowCards: 0,
+      redCards: 0,
+      cleanSheets: 0,
+    },
+    {
+      name: "Omar Assaf",
+      team: "DABEAST FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -271,7 +363,7 @@ const StatsPage = () => {
     },
     {
       name: "Ahmed Assaf",
-      team: "TEAM A",
+      team: "VALVERDE FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -281,7 +373,7 @@ const StatsPage = () => {
     },
     {
       name: "Yaqin Issa",
-      team: "TEAM B",
+      team: "COLE WORLD FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -291,7 +383,7 @@ const StatsPage = () => {
     },
     {
       name: "Sami El-Sayed",
-      team: "TEAM C",
+      team: "DABEAST FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -301,7 +393,7 @@ const StatsPage = () => {
     },
     {
       name: "Rehan Khadri",
-      team: "TEAM D",
+      team: "COLE WORLD FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -311,7 +403,7 @@ const StatsPage = () => {
     },
     {
       name: "Taha El-Sayed",
-      team: "TEAM E",
+      team: "VALVERDE FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -321,7 +413,7 @@ const StatsPage = () => {
     },
     {
       name: "Rahal Rahal",
-      team: "TEAM F",
+      team: "DEMBELE FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -331,7 +423,7 @@ const StatsPage = () => {
     },
     {
       name: "Huthayfah Jomha",
-      team: "TEAM A",
+      team: "PEDRI FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -341,7 +433,7 @@ const StatsPage = () => {
     },
     {
       name: "Yousif Al Mishhedani",
-      team: "TEAM B",
+      team: "DEMBELE FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -351,7 +443,7 @@ const StatsPage = () => {
     },
     {
       name: "Amir Bensekhria",
-      team: "TEAM C",
+      team: "BOMBS FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -361,7 +453,7 @@ const StatsPage = () => {
     },
     {
       name: "Mostafa Heider",
-      team: "TEAM D",
+      team: "BOMBS FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -371,7 +463,7 @@ const StatsPage = () => {
     },
     {
       name: "Sohaib Khadri",
-      team: "TEAM E",
+      team: "COLE WORLD FC",
       position: "BOTH",
       goals: 0,
       assists: 0,
@@ -381,7 +473,7 @@ const StatsPage = () => {
     },
     {
       name: "Abdullah Aderinto",
-      team: "TEAM F",
+      team: "PEDRI FC",
       position: "BOTH",
       goals: 0,
       assists: 0,

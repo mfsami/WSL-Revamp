@@ -71,7 +71,7 @@ const TeamPage = () => {
         { name: "Huthayfah Jomha", number: 1, position: "FWD/DEF" },
         { name: "Abdullah Aderinto", number: 4, position: "FWD/DEF" },
         { name: "Adam Tanouti", number: 10, position: "GK" },
-        { name: "Mysti", number: 7, position: "FWD/DEF" },
+        { name: "Mohamed Elmestiri", number: 7, position: "FWD/DEF" },
         { name: "Rasheed Jomha", number: 11, position: "FWD/DEF" },
         { name: "Mohammad Sadek", number: 11, position: "FWD" },
         { name: "Bilah Rahal", number: 11, position: "DEF" },
