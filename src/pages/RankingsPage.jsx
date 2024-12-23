@@ -113,22 +113,23 @@ const RankingsPage = () => {
     <div className="min-h-screen bg-[#161616]">
       <Navbar />
 
-      <main className="container mx-auto px-4 py-8 mb-16 mt-16 max-w-screen-lg">
-        <div className="bg-[#1a1a1a] rounded-lg p-6 overflow-x-auto">
-          <table className="w-full">
+      <main className="container mx-auto px-4 py-8 mb-16 mt-16">
+        {/* Rankings Table */}
+        <div className="bg-[#1a1a1a] rounded-lg p-4 md:p-6">
+          <table className="w-full text-sm md:text-base table-auto">
             <thead>
               <tr className="text-gray-400 border-b border-gray-700">
-                <th className="py-3 px-4 text-left">Rank</th>
-                <th className="py-3 px-4 text-left">Team</th>
-                <th className="py-3 px-4 text-center">GP</th>
-                <th className="py-3 px-4 text-center">W</th>
-                <th className="py-3 px-4 text-center">D</th>
-                <th className="py-3 px-4 text-center">L</th>
-                <th className="py-3 px-4 text-center">GF</th>
-                <th className="py-3 px-4 text-center">GA</th>
-                <th className="py-3 px-4 text-center">GD</th>
-                <th className="py-3 px-4 text-center">PTS</th>
-                <th className="py-3 px-4 text-center">Form</th>
+                <th className="py-3 px-2 text-left">#</th>
+                <th className="py-3 px-2 text-left">Team</th>
+                <th className="py-3 px-2 text-center">GP</th>
+                <th className="py-3 px-2 text-center">W</th>
+                <th className="py-3 px-2 text-center">D</th>
+                <th className="py-3 px-2 text-center">L</th>
+                <th className="py-3 px-2 text-center">GF</th>
+                <th className="py-3 px-2 text-center">GA</th>
+                <th className="py-3 px-2 text-center">GD</th>
+                <th className="py-3 px-2 text-center">PTS</th>
+                <th className="py-3 px-2 text-center">Form</th>
               </tr>
             </thead>
             <tbody>
@@ -136,10 +137,10 @@ const RankingsPage = () => {
                 <tr
                   key={team.name}
                   className="text-white border-b border-gray-700 last:border-0 transition-colors duration-200">
-                  <td className="py-4 px-4 font-semibold">{team.rank}.</td>
-                  <td className="py-4 px-4">
+                  <td className="py-3 px-2 font-semibold">{team.rank}</td>
+                  <td className="py-3 px-2">
                     <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-[#1a1a1a] rounded-full flex items-center justify-center overflow-hidden">
+                      <div className="w-8 h-8 bg-[#1a1a1a] rounded-full flex items-center justify-center overflow-hidden">
                         <img
                           src={team.logo}
                           alt={`${team.name} Logo`}
@@ -149,14 +150,14 @@ const RankingsPage = () => {
                       <span className="font-semibold">{team.name}</span>
                     </div>
                   </td>
-                  <td className="py-4 px-4 text-center">{team.gamesPlayed}</td>
-                  <td className="py-4 px-4 text-center">{team.wins}</td>
-                  <td className="py-4 px-4 text-center">{team.draws}</td>
-                  <td className="py-4 px-4 text-center">{team.losses}</td>
-                  <td className="py-4 px-4 text-center">{team.goalsFor}</td>
-                  <td className="py-4 px-4 text-center">{team.goalsAgainst}</td>
+                  <td className="py-3 px-2 text-center">{team.gamesPlayed}</td>
+                  <td className="py-3 px-2 text-center">{team.wins}</td>
+                  <td className="py-3 px-2 text-center">{team.draws}</td>
+                  <td className="py-3 px-2 text-center">{team.losses}</td>
+                  <td className="py-3 px-2 text-center">{team.goalsFor}</td>
+                  <td className="py-3 px-2 text-center">{team.goalsAgainst}</td>
                   <td
-                    className={`py-4 px-4 text-center ${
+                    className={`py-3 px-2 text-center ${
                       team.goalDifference > 0
                         ? "text-green-500"
                         : team.goalDifference < 0
@@ -166,15 +167,15 @@ const RankingsPage = () => {
                     {team.goalDifference > 0 ? "+" : ""}
                     {team.goalDifference}
                   </td>
-                  <td className="py-4 px-4 text-center font-bold">
+                  <td className="py-3 px-2 text-center font-bold">
                     {team.points}
                   </td>
-                  <td className="py-4 px-4">
-                    <div className="flex justify-center gap-1">
+                  <td className="py-3 px-2">
+                    <div className="flex flex-wrap justify-center gap-1">
                       {team.form.map((result, index) => (
                         <span
                           key={index}
-                          className={`w-6 h-6 flex items-center justify-center rounded-sm ${getFormBadgeColor(
+                          className={`w-4 h-4 flex items-center justify-center rounded-sm text-xs font-bold ${getFormBadgeColor(
                             result
                           )}`}>
                           {result}
@@ -189,7 +190,7 @@ const RankingsPage = () => {
         </div>
 
         {/* Legend */}
-        <div className="mt-6 flex flex-wrap gap-6 text-sm text-gray-400">
+        <div className="mt-6 flex flex-wrap gap-4 text-sm text-gray-400">
           <div>GP = Games Played</div>
           <div>W = Wins</div>
           <div>D = Draws</div>

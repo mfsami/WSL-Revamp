@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/HomeComps/Navbar";
 import Footer from "../components/HomeComps/Footer";
+import "../styles/SchedulePage.css"; // Importing CSS file
 
 const SchedulePage = () => {
   const [selectedYear, setSelectedYear] = useState("2024-2025");
@@ -14,7 +15,6 @@ const SchedulePage = () => {
   ];
 
   const placeholderMatches = [
-    // Week 1, Day "Dec 23" matches
     {
       id: "2024-2025-1-Dec 23-1",
       year: "2024-2025",
@@ -51,8 +51,6 @@ const SchedulePage = () => {
       date: "Dec 23",
       time: "05:00 PM",
     },
-    // Add more matches for "Dec 26", "Dec 28", etc., for Week 1
-    // Add matches for Week 2 ("Dec 29", "Dec 30", "Jan 2")
   ];
 
   const filteredMatches = placeholderMatches.filter(
@@ -63,120 +61,69 @@ const SchedulePage = () => {
   );
 
   return (
-    <div className="min-h-screen bg-[#161616]">
+    <div className="schedule-container">
       <Navbar />
-
-      <main className="container mx-auto px-4 py-12 mb-16 max-w-screen-lg">
-        {/* Filters Row */}
-        <div className="flex flex-wrap justify-center gap-6 mb-12">
-          {/* Year Selector */}
-          <div className="relative inline-block">
-            <div className="relative">
-              <select
-                value={selectedYear}
-                onChange={(e) => setSelectedYear(e.target.value)}
-                className="px-6 py-3 pr-10 rounded-lg font-semibold bg-[#2a2a2a] text-white appearance-none w-full cursor-pointer transition-all duration-300 hover:bg-[#3a3a3a]">
-                {years.map((year) => (
-                  <option key={year} value={year}>
-                    {year}
-                  </option>
-                ))}
-              </select>
-              <span
-                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
-                style={{ fontSize: "1.5rem", lineHeight: "1rem" }}>
-                &#9662;
-              </span>
-            </div>
-          </div>
-
-          {/* Week Selector */}
-          <div className="relative inline-block">
-            <div className="relative">
-              <select
-                value={selectedYear}
-                onChange={(e) => setSelectedYear(e.target.value)}
-                className="px-6 py-3 pr-10 rounded-lg font-semibold bg-[#2a2a2a] text-white appearance-none w-full cursor-pointer transition-all duration-300 hover:bg-[#3a3a3a]">
-                {years.map((year) => (
-                  <option key={year} value={year}>
-                    {year}
-                  </option>
-                ))}
-              </select>
-              <span
-                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
-                style={{ fontSize: "1.5rem", lineHeight: "1rem" }}>
-                &#9662;
-              </span>
-            </div>
-          </div>
-
-          {/* Day Selector */}
-          <div className="relative inline-block">
-            <div className="relative">
-              <select
-                value={selectedYear}
-                onChange={(e) => setSelectedYear(e.target.value)}
-                className="px-6 py-3 pr-10 rounded-lg font-semibold bg-[#2a2a2a] text-white appearance-none w-full cursor-pointer transition-all duration-300 hover:bg-[#3a3a3a]">
-                {years.map((year) => (
-                  <option key={year} value={year}>
-                    {year}
-                  </option>
-                ))}
-              </select>
-              <span
-                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
-                style={{ fontSize: "1.5rem", lineHeight: "1rem" }}>
-                &#9662;
-              </span>
-            </div>
-          </div>
+      <main className="schedule-main">
+        <div className="filters-row">
+          <select
+            value={selectedYear}
+            onChange={(e) => setSelectedYear(e.target.value)}
+            className="filter-select">
+            {years.map((year) => (
+              <option key={year} value={year}>
+                {year}
+              </option>
+            ))}
+          </select>
+          <select
+            value={selectedWeek}
+            onChange={(e) => setSelectedWeek(Number(e.target.value))}
+            className="filter-select">
+            {weeks.map((week) => (
+              <option key={week.number} value={week.number}>
+                Week {week.number}
+              </option>
+            ))}
+          </select>
+          <select
+            value={selectedDay}
+            onChange={(e) => setSelectedDay(e.target.value)}
+            className="filter-select">
+            {weeks
+              .find((week) => week.number === selectedWeek)
+              ?.days.map((day) => (
+                <option key={day} value={day}>
+                  {day}
+                </option>
+              ))}
+          </select>
         </div>
-
-        {/* Matches */}
-        <div className="space-y-4">
+        <div className="matches-container">
           {filteredMatches.length > 0 ? (
             filteredMatches.map((match) => (
-              <div
-                key={match.id}
-                className="bg-[#1a1a1a] rounded-lg p-6 hover:shadow-md transition-shadow max-w-7xl mx-auto">
-                <div className="flex justify-between items-center">
-                  <div className="flex-1 flex flex-col items-center text-center min-w-[250px]">
-                    <div className="text-white font-semibold text-lg whitespace-nowrap">
-                      {match.homeTeam}
-                    </div>
-                    <div className="text-red-500 font-bold text-xl">
-                      {match.homeScore}
-                    </div>
-                  </div>
-                  <div className="flex-1 flex items-center justify-center text-gray-400 font-semibold text-lg">
-                    VS
-                  </div>
-                  <div className="flex-1 flex flex-col items-center text-center min-w-[250px]">
-                    <div className="text-white font-semibold text-lg whitespace-nowrap">
-                      {match.awayTeam}
-                    </div>
-                    <div className="text-red-500 font-bold text-xl">
-                      {match.awayScore}
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-6">
-                    <div className="bg-red-600 px-2 py-1 text-white font-semibold rounded">
-                      {match.date}
-                    </div>
-                    <div className="text-white font-semibold">{match.time}</div>
-                  </div>
+              <div key={match.id} className="match-card">
+                <div className="match-team">
+                  <p className="team-name">{match.homeTeam}</p>
+                  <p className="team-score">{match.homeScore}</p>
+                </div>
+                <div className="match-vs">VS</div>
+                <div className="match-team">
+                  <p className="team-name">{match.awayTeam}</p>
+                  <p className="team-score">{match.awayScore}</p>
+                </div>
+                <div className="match-info">
+                  <p className="match-date">{match.date}</p>
+                  <p className="match-time">{match.time}</p>
                 </div>
               </div>
             ))
           ) : (
-            <div className="text-center text-gray-400 py-12">
-              Still working on this. Get out of here pal
+            <div className="no-matches">
+              Still working on this. Get outta here pal
             </div>
           )}
         </div>
       </main>
-
       <Footer />
     </div>
   );

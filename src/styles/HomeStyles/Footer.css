@@ -1,80 +1,84 @@
-@font-face {
-  font-family: NEXA-Light;
-  src: url(../../assets/fonts/NEXA-Light/NexaLight.ttf.eot),
-    url(../../assets/fonts/NEXA-Light/NexaLight.ttf.svg),
-    url(../../assets/fonts/NEXA-Light/NexaLight.ttf.woff),
-    url(../../assets/fonts/NEXA-Light/webfonts.ffonts.net.htm),
-    url(../../assets/fonts/NEXA-Light/webfonts.ffonts.net.txt);
-}
-
 .footerCont {
-  width: auto;
-  height: auto;
+  width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
-}
-
-.lineFoot2 {
-  position: absolute;
-  border-bottom: 1px solid rgb(145, 145, 145);
-  width: 46%;
-}
-
-.lineFoot2.left {
-  left: 0;
-}
-
-.lineFoot2.right {
-  right: 0;
+  align-items: center;
+  font-family: "NEXA-Light", sans-serif;
 }
 
 .topFooterCont {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .footerLogo {
-  display: flex;
-  align-items: center;
-
   width: 70px;
   height: auto;
 }
 
 .footerLogosCont {
-  width: 100vw;
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
 
 .footerLogosImg {
-  width: 55vw;
-  margin-right: 20px;
-}
-
-.secondFootCont {
-  background-color: #f4f4f4;
-  width: 100vw;
-  height: 400px;
+  width: 55%;
+  max-width: 600px; /* Prevents image from being too large */
+  min-width: 250px; /* Prevents image from shrinking too much */
+  height: auto;
 }
 
 .bottomFootCont {
   background-color: #e0e0e0;
-  width: 100vw;
-  height: 80px;
+  width: 100%;
+  padding: 20px 0;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .bottomFootCont p {
   font-family: NEXA-LIGHT;
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footerLogo {
+    width: 60px;
+  }
+
+  .footerLogosImg {
+    width: 70%; /* Scales down */
+    max-width: 400px;
+  }
+
+  .bottomFootCont p {
+    font-size: 12px;
+  }
+  .topFooterCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerLogo {
+    width: 50px;
+  }
+
+  .footerLogosImg {
+    width: 80%; /* Scales down more */
+    max-width: 500px;
+  }
+
+  .bottomFootCont p {
+    font-size: 10px;
+  }
 }

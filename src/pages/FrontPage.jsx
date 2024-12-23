@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Navbar from "../components/HomeComps/Navbar";
 import Footer from "../components/HomeComps/Footer";
+import heroImage from "../assets/images/hello.png";
 
 const LandingPage = () => {
   const upcomingMatches = [
@@ -63,16 +64,25 @@ const LandingPage = () => {
     <div className="min-h-screen bg-[#161616]">
       <Navbar />
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#161616] to-transparent z-10"></div>
+      <section
+        className="relative h-[90vh] flex items-center"
+        style={{
+          backgroundImage: `url(${heroImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-10 z-10"></div>
 
+        {/* Content */}
         <div className="relative z-20 max-w-7xl mx-auto px-6">
           <h1 className="text-7xl font-bold text-white mb-6">
             WINTER SOCCER LEAGUE
           </h1>
           <p className="text-2xl text-gray-300 mb-8 max-w-2xl">
-            Experience the thrill of winter soccer where champions are made and
-            legends are born.
+            Experience the thrill of winter soccer league where champions are
+            made and legends are born.
           </p>
           <div className="flex space-x-4">
             <Link

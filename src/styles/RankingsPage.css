@@ -1,0 +1,159 @@
+/* General Page Styling */
+.rankings-container {
+  min-height: 100vh;
+  background-color: #161616;
+  font-family: Arial, sans-serif; /* Uniform font style */
+  color: white;
+}
+
+.rankings-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.table-container {
+  background-color: #1a1a1a;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  overflow-x: auto; /* Enable horizontal scrolling for small screens */
+}
+
+.rankings-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center; /* Center all text in table */
+}
+
+.rankings-table th,
+.rankings-table td {
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.rankings-table th {
+  color: #ccc;
+  border-bottom: 1px solid #555;
+  font-weight: bold;
+}
+
+.rankings-table td {
+  color: white;
+  border-bottom: 1px solid #333;
+}
+
+.rankings-table tr:hover {
+  background-color: #3a3a3a;
+  transition: background-color 0.3s;
+}
+
+.team-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.team-logo {
+  width: 40px;
+  height: 40px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-badge {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-badge.w {
+  background-color: rgba(72, 187, 120, 0.2);
+  color: #48bb78;
+}
+
+.form-badge.d {
+  background-color: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+}
+
+.form-badge.l {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #f44336;
+}
+
+/* Legend Styling */
+.legend-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #ccc;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .rankings-main {
+    padding: 1rem;
+  }
+
+  .rankings-table th,
+  .rankings-table td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .team-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .form-badge {
+    width: 16px;
+    height: 16px;
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rankings-main {
+    padding: 0.5rem;
+  }
+
+  .rankings-table th,
+  .rankings-table td {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .team-logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .form-badge {
+    width: 14px;
+    height: 14px;
+    font-size: 0.6rem;
+  }
+
+  .legend-container {
+    font-size: 0.75rem;
+  }
+}

@@ -7,14 +7,12 @@ const Footer = () => {
   return (
     <div className="footerCont">
       <div className="topFooterCont">
-        <div className="lineFoot2 left"></div>
         <img className="footerLogo" src={NOTEXTLOGOGREY} alt="/" />
-        <div className="lineFoot2 right"></div>
       </div>
       <div className="footerLogosCont">
         <img className="footerLogosImg" src={footerLogos} alt="/" />
       </div>
-      {/* <div className="secondFootCont"></div> */}
+
       <div className="bottomFootCont">
         <p>@WSL 2025 CREATED BY SAMI-ELSAYED</p>
       </div>
