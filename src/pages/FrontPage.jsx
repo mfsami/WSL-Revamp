@@ -12,50 +12,50 @@ const LandingPage = () => {
   const upcomingMatches = [
     {
       id: 1,
-      homeTeam: "TEAM 1",
-      awayTeam: "TEAM 2",
-      date: "Dec 23",
-      time: "03:00 PM",
+      homeTeam: "VALVERDE FC",
+      awayTeam: "PEDRI FC",
+      date: "Dec 26",
+      time: "7:15 PM",
       venue: "Servus Place",
     },
     {
       id: 2,
-      homeTeam: "TEAM 1",
-      awayTeam: "TEAM 2",
-      date: "Dec 23",
-      time: "03:00 PM",
+      homeTeam: "DEMBELE FC",
+      awayTeam: "BOMBS FC",
+      date: "Dec 26",
+      time: "7:15 PM",
       venue: "Servus Place",
     },
     {
       id: 3,
-      homeTeam: "TEAM 1",
-      awayTeam: "TEAM 2",
-      date: "Dec 23",
-      time: "03:00 PM",
+      homeTeam: "DABEAST FC",
+      awayTeam: "BOMBS FC",
+      date: "Dec 26",
+      time: "7:50 PM",
       venue: "Servus Place",
     },
     {
       id: 4,
-      homeTeam: "TEAM 1",
-      awayTeam: "TEAM 2",
-      date: "Dec 23",
-      time: "03:00 PM",
+      homeTeam: "DEMBELE FC",
+      awayTeam: "COLE WORLD FC",
+      date: "Dec 26",
+      time: "7:50 PM",
       venue: "Servus Place",
     },
     {
       id: 5,
-      homeTeam: "TEAM 1",
-      awayTeam: "TEAM 2",
-      date: "Dec 23",
-      time: "03:00 PM",
+      homeTeam: "PEDRI FC",
+      awayTeam: "COLE WORLD FC",
+      date: "Dec 26",
+      time: "8:25 PM",
       venue: "Servus Place",
     },
     {
       id: 6,
-      homeTeam: "TEAM 1",
-      awayTeam: "TEAM 2",
-      date: "Dec 23",
-      time: "03:00 PM",
+      homeTeam: "VALVERDE FC",
+      awayTeam: "DABEAST FC",
+      date: "Dec 26",
+      time: "8:25 PM",
       venue: "Servus Place",
     },
   ];
@@ -101,7 +101,7 @@ const LandingPage = () => {
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white">
               {/* Responsive font sizes */}
-              Upcoming Matches - 12/23
+              Upcoming Matches - 12/26
             </h2>
             <Link
               to="/schedule"

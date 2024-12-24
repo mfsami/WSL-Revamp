@@ -74,7 +74,7 @@ const SchedulePage = () => {
       homeScore: "1",
       awayScore: "2",
       date: "Dec 23",
-      time: "7:50 PM",
+      time: "8:25 PM",
     },
     {
       id: "2024-2025-1-Dec 23-6",
@@ -86,7 +86,7 @@ const SchedulePage = () => {
       homeScore: "4",
       awayScore: "2",
       date: "Dec 23",
-      time: "7:50 PM",
+      time: "8:25 PM",
     },
     //DECEMBER 26
     {
@@ -147,7 +147,7 @@ const SchedulePage = () => {
       homeScore: "-",
       awayScore: "-",
       date: "Dec 26",
-      time: "7:50 PM",
+      time: "8:25 PM",
     },
     {
       id: "2024-2025-1-Dec 26-6",
@@ -159,7 +159,7 @@ const SchedulePage = () => {
       homeScore: "-",
       awayScore: "-",
       date: "Dec 26",
-      time: "7:50 PM",
+      time: "8:25 PM",
     },
     //DECEMBER 28
     {
@@ -196,7 +196,7 @@ const SchedulePage = () => {
       homeScore: "-",
       awayScore: "-",
       date: "Dec 28",
-      time: "7:15 PM",
+      time: "7:50 PM",
     },
     {
       id: "2024-2025-1-Dec 28-4",
@@ -208,7 +208,7 @@ const SchedulePage = () => {
       homeScore: "-",
       awayScore: "-",
       date: "Dec 28",
-      time: "7:15 PM",
+      time: "7:50 PM",
     },
     {
       id: "2024-2025-1-Dec 28-5",
@@ -220,7 +220,7 @@ const SchedulePage = () => {
       homeScore: "-",
       awayScore: "-",
       date: "Dec 28",
-      time: "7:15 PM",
+      time: "8:25 PM",
     },
     {
       id: "2024-2025-1-Dec 28-6",
@@ -232,7 +232,7 @@ const SchedulePage = () => {
       homeScore: "-",
       awayScore: "-",
       date: "Dec 28",
-      time: "7:15 PM",
+      time: "8:25 PM",
     },
   ];
 
