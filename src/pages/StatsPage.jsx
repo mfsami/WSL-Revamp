@@ -417,7 +417,7 @@ const StatsPage = () => {
       position: "BOTH",
       goals: 1,
       assists: 1,
-      yellowCards: 0,
+      yellowCards: 1,
       redCards: 0,
       cleanSheets: 0,
     },

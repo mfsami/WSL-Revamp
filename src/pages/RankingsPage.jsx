@@ -63,7 +63,7 @@ const RankingsPage = () => {
       goalsFor: 9,
       goalsAgainst: 7,
       goalDifference: 2,
-      points: 4,
+      points: 3,
       form: [""],
     },
     {

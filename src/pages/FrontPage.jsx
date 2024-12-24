@@ -95,12 +95,11 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Upcoming Matches */}
-      <section className="py-20 bg-[#1a1a1a]">
+      {/* <section className="py-20 bg-[#1a1a1a]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white">
-              {/* Responsive font sizes */}
+              
               Upcoming Matches - 12/26
             </h2>
             <Link
@@ -141,7 +140,7 @@ const LandingPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
