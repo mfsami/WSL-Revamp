@@ -12,87 +12,87 @@ const RankingsPage = () => {
   const teamRankings = [
     {
       rank: 1,
-      name: "DEMBELE FC",
-      logo: SohaibLogo,
-      gamesPlayed: 0,
-      wins: 0,
+      name: "COLE WORLD FC",
+      logo: ColeLogo,
+      gamesPlayed: 2,
+      wins: 2,
       draws: 0,
       losses: 0,
-      goalsFor: 0,
-      goalsAgainst: 0,
-      goalDifference: 0,
-      points: 0,
-      form: ["W", "W", "W", "W", "W"],
+      goalsFor: 12,
+      goalsAgainst: 2,
+      goalDifference: +10,
+      points: 6,
+      form: [""],
     },
     {
       rank: 2,
-      name: "DABEAST FC",
-      logo: ZakLogo,
-      gamesPlayed: 0,
-      wins: 0,
-      draws: 0,
+      name: "PEDRI FC",
+      logo: PedriLogo,
+      gamesPlayed: 2,
+      wins: 1,
+      draws: 1,
       losses: 0,
-      goalsFor: 0,
-      goalsAgainst: 0,
-      goalDifference: 0,
-      points: 0,
-      form: ["W", "D", "W", "W", "D"],
+      goalsFor: 4,
+      goalsAgainst: 2,
+      goalDifference: 2,
+      points: 4,
+      form: [""],
     },
     {
       rank: 3,
-      name: "VALVERDE FC",
-      logo: AdnanLogo,
-      gamesPlayed: 0,
-      wins: 0,
-      draws: 0,
+      name: "DEMBELE FC",
+      logo: SohaibLogo,
+      gamesPlayed: 2,
+      wins: 1,
+      draws: 1,
       losses: 0,
-      goalsFor: 0,
-      goalsAgainst: 0,
-      goalDifference: 0,
-      points: 0,
-      form: ["L", "W", "W", "D", "W"],
+      goalsFor: 3,
+      goalsAgainst: 2,
+      goalDifference: 1,
+      points: 4,
+      form: [""],
     },
     {
       rank: 4,
-      name: "BOMBS FC",
-      logo: BombsLogo,
-      gamesPlayed: 0,
-      wins: 0,
+      name: "VALVERDE FC",
+      logo: AdnanLogo,
+      gamesPlayed: 2,
+      wins: 1,
       draws: 0,
-      losses: 0,
-      goalsFor: 0,
-      goalsAgainst: 0,
-      goalDifference: 0,
-      points: 0,
-      form: ["D", "L", "W", "D", "W"],
+      losses: 1,
+      goalsFor: 9,
+      goalsAgainst: 7,
+      goalDifference: 2,
+      points: 4,
+      form: [""],
     },
     {
       rank: 5,
-      name: "COLE WORLD FC",
-      logo: ColeLogo,
-      gamesPlayed: 0,
+      name: "DABEAST FC",
+      logo: ZakLogo,
+      gamesPlayed: 2,
       wins: 0,
       draws: 0,
-      losses: 0,
-      goalsFor: 0,
-      goalsAgainst: 0,
-      goalDifference: 0,
+      losses: 2,
+      goalsFor: 2,
+      goalsAgainst: 5,
+      goalDifference: -3,
       points: 0,
-      form: ["L", "L", "D", "L", "W"],
+      form: [""],
     },
     {
       rank: 6,
-      name: "PEDRI FC",
-      logo: PedriLogo,
-      gamesPlayed: 0,
+      name: "BOMBS FC",
+      logo: BombsLogo,
+      gamesPlayed: 2,
       wins: 0,
       draws: 0,
-      losses: 0,
-      goalsFor: 0,
-      goalsAgainst: 0,
-      goalDifference: 0,
+      losses: 2,
+      goalsFor: 3,
+      goalsAgainst: 15,
+      goalDifference: -12,
       points: 0,
-      form: ["L", "L", "D", "L", "W"],
+      form: [""],
     },
   ];
 
@@ -129,7 +129,6 @@ const RankingsPage = () => {
                 <th className="py-3 px-2 text-center">GA</th>
                 <th className="py-3 px-2 text-center">GD</th>
                 <th className="py-3 px-2 text-center">PTS</th>
-                <th className="py-3 px-2 text-center">Form</th>
               </tr>
             </thead>
             <tbody>
@@ -169,19 +168,6 @@ const RankingsPage = () => {
                   </td>
                   <td className="py-3 px-2 text-center font-bold">
                     {team.points}
-                  </td>
-                  <td className="py-3 px-2">
-                    <div className="flex flex-wrap justify-center gap-1">
-                      {team.form.map((result, index) => (
-                        <span
-                          key={index}
-                          className={`w-4 h-4 flex items-center justify-center rounded-sm text-xs font-bold ${getFormBadgeColor(
-                            result
-                          )}`}>
-                          {result}
-                        </span>
-                      ))}
-                    </div>
                   </td>
                 </tr>
               ))}
