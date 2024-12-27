@@ -28,8 +28,9 @@ const TeamPage = () => {
       logo: ZakLogo,
       players: [
         { name: "Zakariya Assaf", number: 1, position: "FWD/DEF" },
-        { name: "Omar Assaf", number: 4, position: "FWD/DEF" },
-        { name: "Aref El-Tawil", number: 10, position: "GK" },
+        { name: "Yaqin Issa", number: 10, position: "FWD/DEF" },
+        // { name: "Omar Assaf", number: 4, position: "FWD/DEF" },
+        { name: "Shaheryar Ahsan", number: 11, position: "GK" },
         { name: "Sami El-sayed", number: 7, position: "FWD/DEF" },
         { name: "Mosaab Jomha", number: 11, position: "DEF" },
         { name: "Zayd Elzein", number: 11, position: "FWD/DEF" },
@@ -56,9 +57,9 @@ const TeamPage = () => {
       players: [
         { name: "Rayyan Islam", number: 1, position: "FWD" },
         { name: "Mohammad Anshasi", number: 4, position: "FWD" },
-        { name: "Yaqin Issa", number: 10, position: "FWD/DEF" },
+        { name: "Aref El-Tawil", number: 10, position: "GK" },
         { name: "Rehan Khadri", number: 7, position: "FWD/DEF" },
-        { name: "Shaheryar Ahsan", number: 11, position: "GK" },
+
         { name: "Adnan El-tayan", number: 11, position: "FWD" },
         { name: "Sohaib Khadri", number: 11, position: "FWD" },
         { name: "Hussein Al-turk", number: 11, position: "FWD" },
