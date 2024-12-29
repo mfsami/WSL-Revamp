@@ -237,7 +237,7 @@ const SchedulePage = () => {
       //DECEMBER 29
     },
     {
-      id: "2024-2025-1-Dec 29-1",
+      id: "2024-2025-2-Dec 29-1",
       year: "2024-2025",
       week: 2,
       day: "Dec 29",
@@ -249,7 +249,7 @@ const SchedulePage = () => {
       time: "7:15 PM",
     },
     {
-      id: "2024-2025-1-Dec 29-2",
+      id: "2024-2025-2-Dec 29-2",
       year: "2024-2025",
       week: 2,
       day: "Dec 29",
@@ -261,7 +261,7 @@ const SchedulePage = () => {
       time: "7:15 PM",
     },
     {
-      id: "2024-2025-1-Dec 29-3",
+      id: "2024-2025-2-Dec 29-3",
       year: "2024-2025",
       week: 2,
       day: "Dec 29",
@@ -273,7 +273,7 @@ const SchedulePage = () => {
       time: "7:45 PM",
     },
     {
-      id: "2024-2025-1-Dec 29-4",
+      id: "2024-2025-2-Dec 29-4",
       year: "2024-2025",
       week: 2,
       day: "Dec 29",
@@ -285,7 +285,7 @@ const SchedulePage = () => {
       time: "7:45 PM",
     },
     {
-      id: "2024-2025-1-Dec 29-5",
+      id: "2024-2025-2-Dec 29-5",
       year: "2024-2025",
       week: 2,
       day: "Dec 29",
@@ -297,7 +297,7 @@ const SchedulePage = () => {
       time: "8:20 PM",
     },
     {
-      id: "2024-2025-1-Dec 29-3",
+      id: "2024-2025-2-Dec 29-6",
       year: "2024-2025",
       week: 2,
       day: "Dec 29",
@@ -312,7 +312,7 @@ const SchedulePage = () => {
     //DECEMBER 30
 
     {
-      id: "2024-2025-1-Dec 30-1",
+      id: "2024-2025-2-Dec 30-1",
       year: "2024-2025",
       week: 2,
       day: "Dec 30",
@@ -324,7 +324,7 @@ const SchedulePage = () => {
       time: "7:15 PM",
     },
     {
-      id: "2024-2025-1-Dec 30-2",
+      id: "2024-2025-2-Dec 30-2",
       year: "2024-2025",
       week: 2,
       day: "Dec 30",
@@ -336,7 +336,7 @@ const SchedulePage = () => {
       time: "7:15 PM",
     },
     {
-      id: "2024-2025-1-Dec 30-3",
+      id: "2024-2025-2-Dec 30-3",
       year: "2024-2025",
       week: 2,
       day: "Dec 30",
@@ -348,7 +348,7 @@ const SchedulePage = () => {
       time: "7:45 PM",
     },
     {
-      id: "2024-2025-1-Dec 30-4",
+      id: "2024-2025-2-Dec 30-4",
       year: "2024-2025",
       week: 2,
       day: "Dec 30",
@@ -360,7 +360,7 @@ const SchedulePage = () => {
       time: "7:45 PM",
     },
     {
-      id: "2024-2025-1-Dec 30-5",
+      id: "2024-2025-2-Dec 30-5",
       year: "2024-2025",
       week: 2,
       day: "Dec 30",
@@ -372,7 +372,7 @@ const SchedulePage = () => {
       time: "8:20 PM",
     },
     {
-      id: "2024-2025-1-Dec 30-6",
+      id: "2024-2025-2-Dec 30-6",
       year: "2024-2025",
       week: 2,
       day: "Dec 30",
@@ -387,7 +387,7 @@ const SchedulePage = () => {
     //DECEMBER 30
 
     {
-      id: "2024-2025-1-Jan 2-1",
+      id: "2024-2025-2-Jan 2-1",
       year: "2024-2025",
       week: 2,
       day: "Jan 2",
@@ -399,7 +399,7 @@ const SchedulePage = () => {
       time: "7:15 PM",
     },
     {
-      id: "2024-2025-1-Jan 2-2",
+      id: "2024-2025-2-Jan 2-2",
       year: "2024-2025",
       week: 2,
       day: "Jan 2",
@@ -411,7 +411,7 @@ const SchedulePage = () => {
       time: "7:15 PM",
     },
     {
-      id: "2024-2025-1-Jan 2-3",
+      id: "2024-2025-2-Jan 2-3",
       year: "2024-2025",
       week: 2,
       day: "Jan 2",
@@ -423,7 +423,7 @@ const SchedulePage = () => {
       time: "7:15 PM",
     },
     {
-      id: "2024-2025-1-Jan 2-4",
+      id: "2024-2025-2-Jan 2-4",
       year: "2024-2025",
       week: 2,
       day: "Jan 2",
@@ -435,7 +435,7 @@ const SchedulePage = () => {
       time: "7:15 PM",
     },
     {
-      id: "2024-2025-1-Jan 2-5",
+      id: "2024-2025-2-Jan 2-5",
       year: "2024-2025",
       week: 2,
       day: "Jan 2",
@@ -447,7 +447,7 @@ const SchedulePage = () => {
       time: "7:15 PM",
     },
     {
-      id: "2024-2025-1-Jan 2-6",
+      id: "2024-2025-2-Jan 2-6",
       year: "2024-2025",
       week: 2,
       day: "Jan 2",
@@ -482,9 +482,18 @@ const SchedulePage = () => {
               </option>
             ))}
           </select>
+
           <select
             value={selectedWeek}
-            onChange={(e) => setSelectedWeek(Number(e.target.value))}
+            onChange={(e) => {
+              const weekNumber = Number(e.target.value);
+              setSelectedWeek(weekNumber);
+              if (weekNumber === 2) {
+                setSelectedDay("Dec 29");
+              } else if (weekNumber === 1) {
+                setSelectedDay("Dec 23");
+              }
+            }}
             className="filter-select">
             {weeks.map((week) => (
               <option key={week.number} value={week.number}>
