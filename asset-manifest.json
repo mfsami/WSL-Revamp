@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WSL-Revamp/static/css/main.441f1278.css",
-    "main.js": "/WSL-Revamp/static/js/main.1c9b2e1e.js",
+    "main.css": "/WSL-Revamp/static/css/main.17629c99.css",
+    "main.js": "/WSL-Revamp/static/js/main.01f38031.js",
     "static/media/hello.png": "/WSL-Revamp/static/media/hello.fe67de477dc23720a1ec.png",
     "static/media/ADNAN.jpg": "/WSL-Revamp/static/media/ADNAN.367bcdfb391442e85e2b.jpg",
     "static/media/ZAKLOGO.png": "/WSL-Revamp/static/media/ZAKLOGO.adf9da8d49394f4081cf.png",
@@ -13,11 +13,11 @@
     "static/media/bombs.jpg": "/WSL-Revamp/static/media/bombs.468d365970ad94911a04.jpg",
     "static/media/footerLogos.png": "/WSL-Revamp/static/media/footerLogos.2948d2f2e624448a0ad0.png",
     "index.html": "/WSL-Revamp/index.html",
-    "main.441f1278.css.map": "/WSL-Revamp/static/css/main.441f1278.css.map",
-    "main.1c9b2e1e.js.map": "/WSL-Revamp/static/js/main.1c9b2e1e.js.map"
+    "main.17629c99.css.map": "/WSL-Revamp/static/css/main.17629c99.css.map",
+    "main.01f38031.js.map": "/WSL-Revamp/static/js/main.01f38031.js.map"
   },
   "entrypoints": [
-    "static/css/main.441f1278.css",
-    "static/js/main.1c9b2e1e.js"
+    "static/css/main.17629c99.css",
+    "static/js/main.01f38031.js"
   ]
 }
