@@ -22,16 +22,18 @@ const StatsPage = () => {
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
+      GA: 13,
     },
     {
       name: "Aref El-Tawil",
       team: "COLE WORLD FC",
       position: "GK",
       goals: 0,
-      assists: 0,
+      assists: 1,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
+      GA: 12,
     },
     {
       name: "Muneer Nazir",
@@ -42,6 +44,7 @@ const StatsPage = () => {
       yellowCards: 1,
       redCards: 0,
       cleanSheets: 0,
+      GA: 15,
     },
 
     {
@@ -53,6 +56,7 @@ const StatsPage = () => {
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
+      GA: 21,
     },
     {
       name: "Adam Zahwee",
@@ -63,11 +67,12 @@ const StatsPage = () => {
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
+      GA: 41,
     },
     {
       name: "Adam Deeb",
       team: "BOMBS FC",
-      position: "GK",
+      position: "FWD",
       goals: 1,
       assists: 0,
       yellowCards: 0,
@@ -83,6 +88,7 @@ const StatsPage = () => {
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
+      GA: 22,
     },
 
     // Defenders
@@ -110,8 +116,8 @@ const StatsPage = () => {
       name: "Rasheed Jomha",
       team: "PEDRI FC",
       position: "DEF",
-      goals: 1,
-      assists: 1,
+      goals: 2,
+      assists: 2,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -153,8 +159,8 @@ const StatsPage = () => {
       name: "Sohaib Jomha",
       team: "DEMBELE FC",
       position: "FWD",
-      goals: 2,
-      assists: 2,
+      goals: 4,
+      assists: 4,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -163,8 +169,8 @@ const StatsPage = () => {
       name: "Hussein Al-Turk",
       team: "COLE WORLD FC",
       position: "FWD",
-      goals: 5,
-      assists: 0,
+      goals: 8,
+      assists: 1,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -173,7 +179,7 @@ const StatsPage = () => {
       name: "Adnan El-Tayan",
       team: "COLE WORLD FC",
       position: "FWD",
-      goals: 2,
+      goals: 3,
       assists: 2,
       yellowCards: 0,
       redCards: 0,
@@ -183,8 +189,8 @@ const StatsPage = () => {
       name: "Adnan Shaban",
       team: "DEMBELE FC",
       position: "FWD",
-      goals: 2,
-      assists: 1,
+      goals: 4,
+      assists: 2,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -193,8 +199,8 @@ const StatsPage = () => {
       name: "Rayyan Islam",
       team: "COLE WORLD FC",
       position: "FWD",
-      goals: 4,
-      assists: 4,
+      goals: 6,
+      assists: 5,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -204,7 +210,7 @@ const StatsPage = () => {
       team: "PEDRI FC",
       position: "FWD",
       goals: 0,
-      assists: 1,
+      assists: 2,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -213,8 +219,8 @@ const StatsPage = () => {
       name: "Mohamed Anshasi",
       team: "COLE WORLD FC",
       position: "FWD",
-      goals: 3,
-      assists: 5,
+      goals: 5,
+      assists: 9,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -223,8 +229,8 @@ const StatsPage = () => {
       name: "Khalid Shaheen",
       team: "VALVERDE FC",
       position: "FWD",
-      goals: 7,
-      assists: 4,
+      goals: 8,
+      assists: 5,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -254,7 +260,7 @@ const StatsPage = () => {
       team: "DEMBELE FC",
       position: "FWD",
       goals: 0,
-      assists: 2,
+      assists: 3,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -263,8 +269,8 @@ const StatsPage = () => {
       name: "Abdelrahman Ebeid",
       team: "VALVERDE FC",
       position: "FWD",
-      goals: 2,
-      assists: 1,
+      goals: 3,
+      assists: 3,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -273,8 +279,8 @@ const StatsPage = () => {
       name: "Mohammed Sheikh Ali",
       team: "VALVERDE FC",
       position: "FWD",
-      goals: 6,
-      assists: 1,
+      goals: 13,
+      assists: 3,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -283,8 +289,8 @@ const StatsPage = () => {
       name: "Jamal Assaf",
       team: "BOMBS FC",
       position: "FWD",
-      goals: 0,
-      assists: 0,
+      goals: 2,
+      assists: 2,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -295,8 +301,8 @@ const StatsPage = () => {
       name: "Adnan El-Tawil",
       team: "VALVERDE FC",
       position: "BOTH",
-      goals: 1,
-      assists: 3,
+      goals: 2,
+      assists: 7,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -305,8 +311,8 @@ const StatsPage = () => {
       name: "Zayd Elzein",
       team: "DABEAST FC",
       position: "BOTH",
-      goals: 2,
-      assists: 1,
+      goals: 5,
+      assists: 4,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -346,7 +352,7 @@ const StatsPage = () => {
       team: "DABEAST FC",
       position: "BOTH",
       goals: 1,
-      assists: 3,
+      assists: 4,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -365,8 +371,8 @@ const StatsPage = () => {
       name: "Ahmed Assaf",
       team: "VALVERDE FC",
       position: "BOTH",
-      goals: 2,
-      assists: 5,
+      goals: 7,
+      assists: 9,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -375,7 +381,7 @@ const StatsPage = () => {
       name: "Yaqin Issa",
       team: "DABEAST FC",
       position: "BOTH",
-      goals: 5,
+      goals: 9,
       assists: 2,
       yellowCards: 0,
       redCards: 0,
@@ -406,7 +412,7 @@ const StatsPage = () => {
       team: "VALVERDE FC",
       position: "BOTH",
       goals: 0,
-      assists: 1,
+      assists: 2,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -415,8 +421,8 @@ const StatsPage = () => {
       name: "Rahal Rahal",
       team: "DEMBELE FC",
       position: "BOTH",
-      goals: 2,
-      assists: 1,
+      goals: 7,
+      assists: 2,
       yellowCards: 1,
       redCards: 0,
       cleanSheets: 0,
@@ -425,8 +431,8 @@ const StatsPage = () => {
       name: "Huthayfah Jomha",
       team: "PEDRI FC",
       position: "BOTH",
-      goals: 4,
-      assists: 2,
+      goals: 5,
+      assists: 3,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -445,7 +451,7 @@ const StatsPage = () => {
       name: "Amir Bensekhria",
       team: "BOMBS FC",
       position: "BOTH",
-      goals: 2,
+      goals: 4,
       assists: 1,
       yellowCards: 0,
       redCards: 0,
@@ -456,7 +462,7 @@ const StatsPage = () => {
       team: "BOMBS FC",
       position: "BOTH",
       goals: 0,
-      assists: 0,
+      assists: 1,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -475,8 +481,8 @@ const StatsPage = () => {
       name: "Abdullah Aderinto",
       team: "PEDRI FC",
       position: "BOTH",
-      goals: 4,
-      assists: 4,
+      goals: 6,
+      assists: 5,
       yellowCards: 0,
       redCards: 0,
       cleanSheets: 0,
@@ -566,8 +572,13 @@ const StatsPage = () => {
               <tr>
                 <th>Player</th>
                 <th>Team</th>
-                <th>Goals</th>
-                <th>Assists</th>
+                {selectedStatType !== "goalkeepers" && (
+                  <>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                  </>
+                )}
+                {selectedStatType === "goalkeepers" && <th>GA</th>}
                 <th>YC</th>
                 <th>RC</th>
                 {selectedStatType === "goalkeepers" && <th>Clean Sheets</th>}
@@ -578,8 +589,15 @@ const StatsPage = () => {
                 <tr key={player.name}>
                   <td>{player.name}</td>
                   <td>{player.team}</td>
-                  <td>{player.goals}</td>
-                  <td>{player.assists}</td>
+                  {selectedStatType !== "goalkeepers" && (
+                    <>
+                      <td>{player.goals}</td>
+                      <td>{player.assists}</td>
+                    </>
+                  )}
+                  {selectedStatType === "goalkeepers" && (
+                    <td>{player.GA || 0}</td>
+                  )}
                   <td>
                     <span className="stat-badge yellow">
                       {player.yellowCards}
