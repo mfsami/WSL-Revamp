@@ -8,12 +8,26 @@ const SchedulePage = () => {
   const [selectedWeek, setSelectedWeek] = useState(1);
   const [selectedDay, setSelectedDay] = useState("Dec 23");
 
-  const years = ["2023-2024", "2024-2025"];
-  const weeks = [
+const years = ["2023-2024", "2024-2025", "2025-2026"];
+
+const weeksByYear = {
+  "2024-2025": [
     { number: 1, days: ["Dec 23", "Dec 26", "Dec 28"] },
     { number: 2, days: ["Dec 29", "Dec 30"] },
     { number: "Playoffs", days: ["Jan 2"] },
-  ];
+  ],
+
+  // NEW SEASON
+  "2025-2026": [
+    { number: 1, days: ["Dec 22", "Dec 23", "Dec 25"] },
+    { number: 2, days: ["Dec 29"] },
+    { number: "Playoffs", days: ["Dec 30", "Jan 1"] }, // placeholders
+  ],
+};
+
+// fallback so nothing breaks if "2023-2024" exists but has no data yet
+const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
+
 
   const placeholderMatches = [
     //DECEMBER 23
@@ -447,15 +461,311 @@ const SchedulePage = () => {
       date: "Jan 2",
       time: "8:55 PM",
     },
+
+    // =====================
+    // 2025-2026 (NEW SEASON)
+    // =====================
+
+    // DECEMBER 22 (Day 1) — 6 games
+    {
+      id: "2025-2026-1-Dec 22-1",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 22",
+      homeTeam: "VALVERDE FC",
+      awayTeam: "MANSAF FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 22",
+      time: "9:00 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 22-2",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 22",
+      homeTeam: "DEMBELE FC",
+      awayTeam: "COLE WORLD FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 22",
+      time: "9:30 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 22-3",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 22",
+      homeTeam: "DABEAST FC",
+      awayTeam: "PEDRI FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 22",
+      time: "10:00 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 22-4",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 22",
+      homeTeam: "COLE WORLD FC",
+      awayTeam: "VALVERDE FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 22",
+      time: "10:30 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 22-5",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 22",
+      homeTeam: "PEDRI FC",
+      awayTeam: "MANSAF FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 22",
+      time: "11:00 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 22-6",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 22",
+      homeTeam: "DEMBELE FC",
+      awayTeam: "DABEAST FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 22",
+      time: "11:30 PM",
+    },
+
+    // DECEMBER 23 (Day 2) — 6 games
+    {
+      id: "2025-2026-1-Dec 23-1",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 23",
+      homeTeam: "MANSAF FC",
+      awayTeam: "PEDRI FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 23",
+      time: "9:00 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 23-2",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 23",
+      homeTeam: "COLE WORLD FC",
+      awayTeam: "DEMBELE FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 23",
+      time: "9:30 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 23-3",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 23",
+      homeTeam: "VALVERDE FC",
+      awayTeam: "DABEAST FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 23",
+      time: "10:00 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 23-4",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 23",
+      homeTeam: "MANSAF FC",
+      awayTeam: "VALVERDE FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 23",
+      time: "10:30 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 23-5",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 23",
+      homeTeam: "DABEAST FC",
+      awayTeam: "DEMBELE FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 23",
+      time: "11:00 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 23-6",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 23",
+      homeTeam: "COLE WORLD FC",
+      awayTeam: "PEDRI FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 23",
+      time: "11:30 PM",
+    },
+
+    // DECEMBER 25 (Day 3) — 6 games
+    {
+      id: "2025-2026-1-Dec 25-1",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 25",
+      homeTeam: "PEDRI FC",
+      awayTeam: "VALVERDE FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 25",
+      time: "9:00 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 25-2",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 25",
+      homeTeam: "COLE WORLD FC",
+      awayTeam: "DABEAST FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 25",
+      time: "9:30 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 25-3",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 25",
+      homeTeam: "VALVERDE FC",
+      awayTeam: "DEMBELE FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 25",
+      time: "10:00 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 25-4",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 25",
+      homeTeam: "MANSAF FC",
+      awayTeam: "COLE WORLD FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 25",
+      time: "10:30 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 25-5",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 25",
+      homeTeam: "DABEAST FC",
+      awayTeam: "MANSAF FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 25",
+      time: "11:00 PM",
+    },
+    {
+      id: "2025-2026-1-Dec 25-6",
+      year: "2025-2026",
+      week: 1,
+      day: "Dec 25",
+      homeTeam: "PEDRI FC",
+      awayTeam: "DEMBELE FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 25",
+      time: "11:30 PM",
+    },
+
+    // DECEMBER 29 (Day 4) — 3 games
+    {
+      id: "2025-2026-2-Dec 29-1",
+      year: "2025-2026",
+      week: 2,
+      day: "Dec 29",
+      homeTeam: "VALVERDE FC",
+      awayTeam: "PEDRI FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 29",
+      time: "9:00 PM",
+    },
+    {
+      id: "2025-2026-2-Dec 29-2",
+      year: "2025-2026",
+      week: 2,
+      day: "Dec 29",
+      homeTeam: "DABEAST FC",
+      awayTeam: "COLE WORLD FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 29",
+      time: "9:30 PM",
+    },
+    {
+      id: "2025-2026-2-Dec 29-3",
+      year: "2025-2026",
+      week: 2,
+      day: "Dec 29",
+      homeTeam: "DEMBELE FC",
+      awayTeam: "MANSAF FC",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 29",
+      time: "10:00 PM",
+    },
+
+    // DECEMBER 30 (placeholder)
+    {
+      id: "2025-2026-Playoffs-Dec 30-1",
+      year: "2025-2026",
+      week: "Playoffs",
+      day: "Dec 30",
+      homeTeam: "PLAYOFFS",
+      awayTeam: "TBD",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 30",
+      time: "9:00 PM",
+    },
+
+    // JAN 1 (placeholder)
+    {
+      id: "2025-2026-Playoffs-Jan 1-1",
+      year: "2025-2026",
+      week: "Playoffs",
+      day: "Jan 1",
+      homeTeam: "PLAYOFFS",
+      awayTeam: "TBD",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Jan 1",
+      time: "9:00 PM",
+    },
+
   ];
+
+  const playoffDays = weeks.find((w) => w.number === "Playoffs")?.days || [];
 
   const filteredMatches = placeholderMatches.filter(
     (match) =>
       match.year === selectedYear &&
+      match.day === selectedDay &&
       ((typeof selectedWeek === "number" && match.week === selectedWeek) ||
-        (selectedWeek === "Playoffs" && match.day === "Jan 2")) &&
-      match.day === selectedDay
+        (selectedWeek === "Playoffs" && playoffDays.includes(match.day)))
   );
+
 
   const renderPlayoffMatches = (matches) => {
     return matches.map((match, index) => (
@@ -488,7 +798,16 @@ const SchedulePage = () => {
         <div className="filters-row">
           <select
             value={selectedYear}
-            onChange={(e) => setSelectedYear(e.target.value)}
+            onChange={(e) => {
+              const newYear = e.target.value;
+              setSelectedYear(newYear);
+
+              const yearWeeks = weeksByYear[newYear] || weeksByYear["2024-2025"];
+              const firstWeek = yearWeeks[0];
+              setSelectedWeek(firstWeek.number);
+              setSelectedDay(firstWeek.days[0]);
+            }}
+
             className="filter-select">
             {years.map((year) => (
               <option key={year} value={year}>
@@ -501,18 +820,14 @@ const SchedulePage = () => {
             value={selectedWeek}
             onChange={(e) => {
               const weekValue =
-                e.target.value === "Playoffs"
-                  ? "Playoffs"
-                  : Number(e.target.value);
+                e.target.value === "Playoffs" ? "Playoffs" : Number(e.target.value);
+
               setSelectedWeek(weekValue);
-              if (weekValue === 2) {
-                setSelectedDay("Dec 29");
-              } else if (weekValue === 1) {
-                setSelectedDay("Dec 23");
-              } else if (weekValue === "Playoffs") {
-                setSelectedDay("Jan 2");
-              }
+
+              const weekObj = weeks.find((w) => w.number === weekValue);
+              if (weekObj?.days?.length) setSelectedDay(weekObj.days[0]);
             }}
+
             className="filter-select">
             {weeks.map((week) => (
               <option key={week.number} value={week.number}>

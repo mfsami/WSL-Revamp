@@ -15,12 +15,12 @@ const TeamPage = () => {
       logo: SohaibLogo,
       players: [
         { name: "Sohaib Jomha", number: 1, position: "FWD" },
-        { name: "Yousif Mesh", number: 4, position: "FWD/DEF" },
-        { name: "Rahal Rahal", number: 10, position: "FWD/DEF" },
-        { name: "Muneer Nazir", number: 7, position: "GK" },
-        { name: "Adnan Shaban", number: 11, position: "FWD/DEF" },
-        { name: "Abdirahman Sheikhdon", number: 11, position: "FWD" },
-        { name: "Omar Jomha", number: 11, position: "FWD/DEF" },
+        { name: "Mohammed Sheikh", number: 4, position: "FWD/DEF" },
+        { name: "Hamza Moussa", number: 10, position: "FWD/DEF" },
+        { name: "Ahmed Tarabain", number: 7, position: "GK" },
+        { name: "Mosaab Jomha", number: 11, position: "FWD/DEF" },
+        { name: "Ahmed Tarabin", number: 11, position: "FWD" },
+        { name: "Abdel-Halim Tarbine", number: 11, position: "FWD/DEF" },
       ],
     },
     {
@@ -28,13 +28,13 @@ const TeamPage = () => {
       logo: ZakLogo,
       players: [
         { name: "Zakariya Assaf", number: 1, position: "FWD/DEF" },
-        { name: "Yaqin Issa", number: 10, position: "FWD/DEF" },
+        { name: "Rahal Rahal", number: 10, position: "FWD/DEF" },
         // { name: "Omar Assaf", number: 4, position: "FWD/DEF" },
-        { name: "Shaheryar Ahsan", number: 11, position: "GK" },
-        { name: "Sami El-sayed", number: 7, position: "FWD/DEF" },
-        { name: "Mosaab Jomha", number: 11, position: "DEF" },
-        { name: "Zayd Elzein", number: 11, position: "FWD/DEF" },
-        { name: "Mohammed El-khatib", number: 11, position: "DEF" },
+        { name: "Husam Altaher", number: 11, position: "GK" },
+        { name: "Tariq Assaf", number: 7, position: "FWD/DEF" },
+        { name: "Obeydulah Sheikhdon", number: 11, position: "DEF" },
+        { name: "Taha El-sayed", number: 11, position: "FWD/DEF" },
+        { name: "Sohaib Khadri", number: 11, position: "DEF" },
       ],
     },
     {
@@ -42,13 +42,13 @@ const TeamPage = () => {
       logo: AdnanLogo,
       players: [
         { name: "Adnan El-tawil", number: 1, position: "FWD/DEF" },
-        { name: "Ahmed Assaf", number: 1, position: "FWD/DEF" },
-        { name: "Khalid Shaheen", number: 4, position: "FWD" },
-        { name: "Mohammad Sheikh Ali", number: 10, position: "FWD" },
-        { name: "Abdelrahman Ebeid", number: 7, position: "FWD/DEF" },
-        { name: "Taha El-sayed", number: 11, position: "FWD/DEF" },
-        { name: "Yzan Al-maani", number: 11, position: "FWD/DEF" },
-        { name: "Khalid Al-kadri", number: 11, position: "GK" },
+        { name: "Abdullah Aderinto", number: 1, position: "FWD/DEF" },
+        { name: "Mohamed Elmestiri", number: 4, position: "FWD" },
+        { name: "Rehan Khadri", number: 10, position: "FWD" },
+        { name: "Sami El-sayed", number: 7, position: "FWD/DEF" },
+        { name: "Yazan Al-Maani", number: 11, position: "FWD/DEF" },
+        { name: "Motassim Assaf", number: 11, position: "FWD/DEF" },
+        
       ],
     },
     {
@@ -56,13 +56,13 @@ const TeamPage = () => {
       logo: ColeLogo,
       players: [
         { name: "Rayyan Islam", number: 1, position: "FWD" },
-        { name: "Mohammad Anshasi", number: 4, position: "FWD" },
-        { name: "Aref El-Tawil", number: 10, position: "GK" },
-        { name: "Rehan Khadri", number: 7, position: "FWD/DEF" },
+        { name: "Yousif Al-Mishhedani", number: 4, position: "FWD" },
+        { name: "Ahmed Mohamed", number: 10, position: "GK" },
+        { name: "Adnan Shaben", number: 7, position: "FWD/DEF" },
 
         { name: "Adnan El-tayan", number: 11, position: "FWD" },
-        { name: "Sohaib Khadri", number: 11, position: "FWD" },
-        { name: "Hussein Al-turk", number: 11, position: "FWD" },
+        { name: "Adam Zahwee", number: 11, position: "FWD" },
+        { name: "Abdulhakeem Zahwee", number: 11, position: "FWD" },
       ],
     },
     {
@@ -70,27 +70,25 @@ const TeamPage = () => {
       logo: PedriLogo,
       players: [
         { name: "Huthayfah Jomha", number: 1, position: "FWD/DEF" },
-        { name: "Abdullah Aderinto", number: 4, position: "FWD/DEF" },
-        { name: "Adam Tanouti", number: 10, position: "GK" },
-        { name: "Mohamed Elmestiri", number: 7, position: "FWD/DEF" },
-        { name: "Rasheed Jomha", number: 11, position: "FWD/DEF" },
-        { name: "Mohammad Sadek", number: 11, position: "FWD" },
-        { name: "Bilah Rahal", number: 11, position: "DEF" },
-        { name: "Redoune Zerqalah", number: 11, position: "FWD" },
+        { name: "Anes Mohamed", number: 4, position: "FWD/DEF" },
+        { name: "Mohamed Mouallem", number: 10, position: "GK" },
+        { name: "Adam Alkhalas", number: 7, position: "FWD/DEF" },
+        { name: "Shaheryar Ahsan", number: 11, position: "FWD/DEF" },
+        { name: "Salman Zafar", number: 11, position: "FWD" },
+        { name: "Omar Jomha", number: 11, position: "DEF" },
       ],
     },
     {
-      name: "BOMBS FC",
+      name: "MANSAF FC",
       logo: BombsLogo,
       players: [
-        { name: "Jamal Assaf", number: 1, position: "FWD" },
-        { name: "Anes Mohammed", number: 4, position: "FWD" },
-        { name: "Adam Deeb", number: 10, position: "FWD" },
-        { name: "Amir Bensekhria", number: 7, position: "FWD" },
-        { name: "Adam Zahwee", number: 11, position: "GK" },
-        { name: "Mostafa Heider", number: 11, position: "FWD/DEF" },
-        { name: "Mohammad Al-turk", number: 11, position: "DEF" },
-        { name: "Motassim Assaf", number: 11, position: "FWD/DEF" },
+        { name: "Aref El-tawil", number: 1, position: "FWD" },
+        { name: "Adam Deeb", number: 4, position: "FWD" },
+        { name: "Khalid Shaheen", number: 10, position: "FWD" },
+        { name: "Ayub Embaya", number: 7, position: "FWD" },
+        { name: "Muneer Nazir", number: 11, position: "GK" },
+        { name: "Ayman Alkhalas", number: 11, position: "FWD/DEF" },
+        { name: "Ayman Arman", number: 11, position: "DEF" },
       ],
     },
   ];
@@ -165,7 +163,7 @@ const TeamPage = () => {
                 key={`${player.name}-${player.number}`}
                 className="bg-[#161616] rounded-lg p-4 hover:bg-[#222222] transition-colors">
                 <div className="text-white font-semibold">{player.name}</div>
-                <div className="text-gray-400 text-sm">{player.position}</div>
+                {/* <div className="text-gray-400 text-sm">{player.position}</div> */}
               </div>
             ))}
           </div>

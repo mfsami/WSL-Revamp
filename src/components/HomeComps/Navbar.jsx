@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import NOTEXTLOGO from "../../assets/images/NOTEXTLOGO.png";
+import NOTEXTLOGO from "../../assets/images/LOGOSVG.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +12,8 @@ const Navbar = () => {
     { path: "/rankings", label: "RANKINGS" },
     { path: "/stats", label: "STATS" },
     { path: "/schedule", label: "SCHEDULE" },
-    { path: "/highlights", label: "HIGHLIGHTS" },
-    { path: "/awards", label: "AWARDS" },
+    // { path: "/highlights", label: "HIGHLIGHTS" },
+    // { path: "/awards", label: "AWARDS" },
   ];
 
   return (
