@@ -1,0 +1,56 @@
+// src/data/stats/players_2025_2026.js
+export const players20252026 = [
+  // DEMBELE FC
+  { name: "Sohaib Jomha", team: "DEMBELE FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Mohammed Sheikh", team: "DEMBELE FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Hamza Moussa", team: "DEMBELE FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Ahmed Tarabain", team: "DEMBELE FC", position: "GK", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0, GA: 0 },
+  { name: "Mosaab Jomha", team: "DEMBELE FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Ahmed Tarabin", team: "DEMBELE FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Abdel-Halim Tarbine", team: "DEMBELE FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+
+  // DABEAST FC
+  { name: "Zakariya Assaf", team: "DABEAST FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Rahal Rahal", team: "DABEAST FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Husam Altaher", team: "DABEAST FC", position: "GK", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0, GA: 0 },
+  { name: "Tariq Assaf", team: "DABEAST FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Obeydulah Sheikhdon", team: "DABEAST FC", position: "DEF", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Taha El-sayed", team: "DABEAST FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Sohaib Khadri", team: "DABEAST FC", position: "DEF", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+
+  // VALVERDE FC
+  { name: "Adnan El-tawil", team: "VALVERDE FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Abdullah Aderinto", team: "VALVERDE FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Mohamed Elmestiri", team: "VALVERDE FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Rehan Khadri", team: "VALVERDE FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Sami El-sayed", team: "VALVERDE FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Yazan Al-Maani", team: "VALVERDE FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Motassim Assaf", team: "VALVERDE FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+
+  // COLE WORLD FC
+  { name: "Rayyan Islam", team: "COLE WORLD FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Yousif Al-Mishhedani", team: "COLE WORLD FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Ahmed Mohamed", team: "COLE WORLD FC", position: "GK", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0, GA: 0 },
+  { name: "Adnan Shaben", team: "COLE WORLD FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Adnan El-tayan", team: "COLE WORLD FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Adam Zahwee", team: "COLE WORLD FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Abdulhakeem Zahwee", team: "COLE WORLD FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+
+  // PEDRI FC
+  { name: "Huthayfah Jomha", team: "PEDRI FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Anes Mohamed", team: "PEDRI FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Mohamed Mouallem", team: "PEDRI FC", position: "GK", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0, GA: 0 },
+  { name: "Adam Alkhalas", team: "PEDRI FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Shaheryar Ahsan", team: "PEDRI FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Salman Zafar", team: "PEDRI FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Omar Jomha", team: "PEDRI FC", position: "DEF", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+
+  // MANSAF FC
+  { name: "Aref El-tawil", team: "MANSAF FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Adam Deeb", team: "MANSAF FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Khalid Shaheen", team: "MANSAF FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Ayub Embaya", team: "MANSAF FC", position: "FWD", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Muneer Nazir", team: "MANSAF FC", position: "GK", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0, GA: 0 },
+  { name: "Ayman Alkhalas", team: "MANSAF FC", position: "BOTH", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+  { name: "Ayman Arman", team: "MANSAF FC", position: "DEF", goals: 0, assists: 0, yellowCards: 0, redCards: 0, cleanSheets: 0 },
+];

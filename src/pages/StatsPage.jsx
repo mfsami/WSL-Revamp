@@ -3,496 +3,27 @@ import Navbar from "../components/HomeComps/Navbar";
 import Footer from "../components/HomeComps/Footer";
 import "../styles/StatsPage.css";
 
+import { players20242025 } from "../data/stats/players_2024_2025";
+import { players20252026 } from "../data/stats/players_2025_2026";
+
+
 const StatsPage = () => {
   const [selectedStatType, setSelectedStatType] = useState("all");
   const [selectedTeam, setSelectedTeam] = useState("all");
-  const [sortConfig, setSortConfig] = useState({
-    key: "goals",
-    direction: "desc",
-  });
+  const years = ["2024-2025", "2025-2026"];
+  const [selectedYear, setSelectedYear] = useState("2025-2026");
+  const playersByYear = {
+    "2024-2025": players20242025,
+    "2025-2026": players20252026,
+  };
 
-  const players = [
-    // Goalies
-    {
-      name: "Adam Tanouti",
-      team: "PEDRI FC",
-      position: "GK",
-      goals: 0,
-      assists: 1,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-      GA: 13,
-    },
-    {
-      name: "Aref El-Tawil",
-      team: "COLE WORLD FC",
-      position: "GK",
-      goals: 0,
-      assists: 1,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-      GA: 12,
-    },
-    {
-      name: "Muneer Nazir",
-      team: "DEMBELE FC",
-      position: "GK",
-      goals: 0,
-      assists: 0,
-      yellowCards: 1,
-      redCards: 0,
-      cleanSheets: 0,
-      GA: 15,
-    },
+  const players = playersByYear[selectedYear] || [];
 
-    {
-      name: "Khaled Al-Kadri",
-      team: "VALVERDE FC",
-      position: "GK",
-      goals: 0,
-      assists: 0,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-      GA: 21,
-    },
-    {
-      name: "Adam Zahwee",
-      team: "BOMBS FC",
-      position: "GK",
-      goals: 0,
-      assists: 1,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-      GA: 41,
-    },
-    {
-      name: "Adam Deeb",
-      team: "BOMBS FC",
-      position: "FWD",
-      goals: 1,
-      assists: 0,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Shaheryar Ahsan",
-      team: "DABEAST FC",
-      position: "GK",
-      goals: 0,
-      assists: 0,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-      GA: 22,
-    },
-
-    // Defenders
-    {
-      name: "Mosaab Jomha",
-      team: "DABEAST FC",
-      position: "DEF",
-      goals: 0,
-      assists: 1,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Bilal Rahal",
-      team: "PEDRI FC",
-      position: "DEF",
-      goals: 0,
-      assists: 0,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Rasheed Jomha",
-      team: "PEDRI FC",
-      position: "DEF",
-      goals: 2,
-      assists: 2,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Mohamed Al-Turk",
-      team: "BOMBS FC",
-      position: "DEF",
-      goals: 1,
-      assists: 0,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Mohammed Elkhatib",
-      team: "DABEAST FC",
-      position: "DEF",
-      goals: 0,
-      assists: 0,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-
-    {
-      name: "Mohammed Sadek",
-      team: "PEDRI FC",
-      position: "DEF",
-      goals: 2,
-      assists: 0,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-
-    // Attackers
-    {
-      name: "Sohaib Jomha",
-      team: "DEMBELE FC",
-      position: "FWD",
-      goals: 4,
-      assists: 4,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Hussein Al-Turk",
-      team: "COLE WORLD FC",
-      position: "FWD",
-      goals: 8,
-      assists: 1,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Adnan El-Tayan",
-      team: "COLE WORLD FC",
-      position: "FWD",
-      goals: 3,
-      assists: 2,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Adnan Shaban",
-      team: "DEMBELE FC",
-      position: "FWD",
-      goals: 4,
-      assists: 2,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Rayyan Islam",
-      team: "COLE WORLD FC",
-      position: "FWD",
-      goals: 6,
-      assists: 5,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Mohamed Elmestiri",
-      team: "PEDRI FC",
-      position: "FWD",
-      goals: 0,
-      assists: 2,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Mohamed Anshasi",
-      team: "COLE WORLD FC",
-      position: "FWD",
-      goals: 5,
-      assists: 9,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Khalid Shaheen",
-      team: "VALVERDE FC",
-      position: "FWD",
-      goals: 8,
-      assists: 5,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Redouane Zerqalah",
-      team: "PEDRI FC",
-      position: "FWD",
-      goals: 1,
-      assists: 1,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Anes Mohammed",
-      team: "BOMBS FC",
-      position: "FWD",
-      goals: 3,
-      assists: 1,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Abdirahman Sheikhdon",
-      team: "DEMBELE FC",
-      position: "FWD",
-      goals: 0,
-      assists: 3,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Abdelrahman Ebeid",
-      team: "VALVERDE FC",
-      position: "FWD",
-      goals: 3,
-      assists: 3,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Mohammed Sheikh Ali",
-      team: "VALVERDE FC",
-      position: "FWD",
-      goals: 13,
-      assists: 3,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Jamal Assaf",
-      team: "BOMBS FC",
-      position: "FWD",
-      goals: 2,
-      assists: 2,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-
-    // Both
-    {
-      name: "Adnan El-Tawil",
-      team: "VALVERDE FC",
-      position: "BOTH",
-      goals: 2,
-      assists: 7,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Zayd Elzein",
-      team: "DABEAST FC",
-      position: "BOTH",
-      goals: 5,
-      assists: 4,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Omar Jomha",
-      team: "DEMBELE FC",
-      position: "BOTH",
-      goals: 0,
-      assists: 0,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Yazan Al Maani",
-      team: "VALVERDE FC",
-      position: "BOTH",
-      goals: 1,
-      assists: 0,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Motassim Assaf",
-      team: "BOMBS FC",
-      position: "BOTH",
-      goals: 0,
-      assists: 0,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Zakariya Assaf",
-      team: "DABEAST FC",
-      position: "BOTH",
-      goals: 1,
-      assists: 4,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Omar Assaf",
-      team: "DABEAST FC",
-      position: "BOTH",
-      goals: 1,
-      assists: 0,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Ahmed Assaf",
-      team: "VALVERDE FC",
-      position: "BOTH",
-      goals: 7,
-      assists: 9,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Yaqin Issa",
-      team: "DABEAST FC",
-      position: "BOTH",
-      goals: 9,
-      assists: 2,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Sami El-Sayed",
-      team: "DABEAST FC",
-      position: "BOTH",
-      goals: 0,
-      assists: 1,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Rehan Khadri",
-      team: "COLE WORLD FC",
-      position: "BOTH",
-      goals: 1,
-      assists: 1,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Taha El-Sayed",
-      team: "VALVERDE FC",
-      position: "BOTH",
-      goals: 0,
-      assists: 2,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Rahal Rahal",
-      team: "DEMBELE FC",
-      position: "BOTH",
-      goals: 7,
-      assists: 2,
-      yellowCards: 1,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Huthayfah Jomha",
-      team: "PEDRI FC",
-      position: "BOTH",
-      goals: 5,
-      assists: 3,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Yousif Al Mishhedani",
-      team: "DEMBELE FC",
-      position: "BOTH",
-      goals: 2,
-      assists: 1,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Amir Bensekhria",
-      team: "BOMBS FC",
-      position: "BOTH",
-      goals: 4,
-      assists: 1,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Mostafa Heider",
-      team: "BOMBS FC",
-      position: "BOTH",
-      goals: 0,
-      assists: 1,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Sohaib Khadri",
-      team: "COLE WORLD FC",
-      position: "BOTH",
-      goals: 3,
-      assists: 1,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-    {
-      name: "Abdullah Aderinto",
-      team: "PEDRI FC",
-      position: "BOTH",
-      goals: 6,
-      assists: 5,
-      yellowCards: 0,
-      redCards: 0,
-      cleanSheets: 0,
-    },
-  ];
 
   const statTypes = [
     { id: "goals", label: "Top Scorers" },
     { id: "assists", label: "Top Assisters" },
-    { id: "goalkeepers", label: "Goalkeepers" },
+    // { id: "goalkeepers", label: "Goalkeepers" },
   ];
 
   const teams = [...new Set(players.map((player) => player.team))];
@@ -527,19 +58,35 @@ const StatsPage = () => {
       <main className="stats-main">
         {/* Filter Row */}
         <div className="filters-row">
-          <label className="filter-label">Filter by Team:</label>
-          <select
-            value={selectedTeam}
-            onChange={(e) => setSelectedTeam(e.target.value)}
-            className="filter-select">
-            <option value="all">All Players</option>
-            {teams.map((team) => (
-              <option key={team} value={team}>
-                {team}
-              </option>
-            ))}
-          </select>
-        </div>
+        <label className="filter-label">Season:</label>
+        <select
+          value={selectedYear}
+          onChange={(e) => {
+            setSelectedYear(e.target.value);
+            setSelectedTeam("all"); // optional but nice: avoids "missing team" when switching seasons
+          }}
+          className="filter-select">
+          {years.map((year) => (
+            <option key={year} value={year}>
+              {year}
+            </option>
+          ))}
+        </select>
+
+        <label className="filter-label">Filter by Team:</label>
+        <select
+          value={selectedTeam}
+          onChange={(e) => setSelectedTeam(e.target.value)}
+          className="filter-select">
+          <option value="all">All Players</option>
+          {teams.map((team) => (
+            <option key={team} value={team}>
+              {team}
+            </option>
+          ))}
+        </select>
+      </div>
+
 
         {/* Stat Buttons */}
         <div className="stat-buttons">

@@ -7,6 +7,8 @@ import ZakLogo from "../assets/images/logos/ZAKLOGO.png"; // Dabeast
 import AdnanLogo from "../assets/images/logos/ADNAN.jpg"; // Valverde
 import ColeLogo from "../assets/images/logos/cole.jpg"; // Cole World
 import PedriLogo from "../assets/images/logos/pedri.jpg"; // Pedri
+import BombsLogo from "../assets/images/logos/bombs.jpg"; // Mansaf
+
 
 const RankingsPage = () => {
   const groupAOrder = ["VALVERDE FC", "MANSAF FC", "PEDRI FC"];
@@ -25,73 +27,17 @@ const RankingsPage = () => {
     points: 0,
   });
 
-  // This season standings (edit these anytime)
-  // NOTE: I added MANSAF FC with placeholder 0s because it wasn’t in your old table.
-  const standings = [
-    {
-      name: "COLE WORLD FC",
-      logo: ColeLogo,
-      gamesPlayed: 10,
-      wins: 7,
-      draws: 0,
-      losses: 3,
-      goalsFor: 26,
-      goalsAgainst: 12,
-      goalDifference: 14,
-      points: 21,
-    },
-    {
-      name: "DEMBELE FC",
-      logo: SohaibLogo,
-      gamesPlayed: 10,
-      wins: 6,
-      draws: 1,
-      losses: 3,
-      goalsFor: 18,
-      goalsAgainst: 15,
-      goalDifference: 3,
-      points: 19,
-    },
-    {
-      name: "VALVERDE FC",
-      logo: AdnanLogo,
-      gamesPlayed: 10,
-      wins: 5,
-      draws: 1,
-      losses: 4,
-      goalsFor: 31,
-      goalsAgainst: 21,
-      goalDifference: 10,
-      points: 16,
-    },
-    {
-      name: "PEDRI FC",
-      logo: PedriLogo,
-      gamesPlayed: 10,
-      wins: 4,
-      draws: 2,
-      losses: 4,
-      goalsFor: 18,
-      goalsAgainst: 13,
-      goalDifference: 5,
-      points: 14,
-    },
-    {
-      name: "DABEAST FC",
-      logo: ZakLogo,
-      gamesPlayed: 10,
-      wins: 4,
-      draws: 1,
-      losses: 5,
-      goalsFor: 18,
-      goalsAgainst: 22,
-      goalDifference: -4,
-      points: 13,
-    },
 
-    // Placeholder — update once you have real stats
-    emptyTeam("MANSAF FC"),
-  ];
+  // This season standings (NEW SEASON — all stats start at 0)
+const standings = [
+  emptyTeam("VALVERDE FC", AdnanLogo),
+  emptyTeam("MANSAF FC", BombsLogo),
+  emptyTeam("PEDRI FC", PedriLogo),
+  emptyTeam("DEMBELE FC", SohaibLogo),
+  emptyTeam("COLE WORLD FC", ColeLogo),
+  emptyTeam("DABEAST FC", ZakLogo),
+];
+
 
   const sortTeams = (teams) => {
     return [...teams].sort(

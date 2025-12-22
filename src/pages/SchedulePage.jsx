@@ -4,9 +4,9 @@ import Footer from "../components/HomeComps/Footer";
 import "../styles/SchedulePage.css"; // Importing CSS file
 
 const SchedulePage = () => {
-  const [selectedYear, setSelectedYear] = useState("2024-2025");
+  const [selectedYear, setSelectedYear] = useState("2025-2026");
   const [selectedWeek, setSelectedWeek] = useState(1);
-  const [selectedDay, setSelectedDay] = useState("Dec 23");
+  const [selectedDay, setSelectedDay] = useState("Dec 22");
 
 const years = ["2023-2024", "2024-2025", "2025-2026"];
 
