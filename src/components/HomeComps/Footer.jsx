@@ -6,9 +6,9 @@ import footerLogos from "../../assets/images/footerLogos.png";
 const Footer = () => {
   return (
     <div className="footerCont">
-      <div className="topFooterCont">
+      {/* <div className="topFooterCont">
         <img className="footerLogo" src={NOTEXTLOGOGREY} alt="/" />
-      </div>
+      </div> */}
       <div className="footerLogosCont">
         <img className="footerLogosImg" src={footerLogos} alt="/" />
       </div>

@@ -8,26 +8,25 @@ const SchedulePage = () => {
   const [selectedWeek, setSelectedWeek] = useState(1);
   const [selectedDay, setSelectedDay] = useState("Dec 22");
 
-const years = ["2023-2024", "2024-2025", "2025-2026"];
+  const years = ["2023-2024", "2024-2025", "2025-2026"];
 
-const weeksByYear = {
-  "2024-2025": [
-    { number: 1, days: ["Dec 23", "Dec 26", "Dec 28"] },
-    { number: 2, days: ["Dec 29", "Dec 30"] },
-    { number: "Playoffs", days: ["Jan 2"] },
-  ],
+  const weeksByYear = {
+    "2024-2025": [
+      { number: 1, days: ["Dec 23", "Dec 26", "Dec 28"] },
+      { number: 2, days: ["Dec 29", "Dec 30"] },
+      { number: "Playoffs", days: ["Jan 2"] },
+    ],
 
-  // NEW SEASON
-  "2025-2026": [
-    { number: 1, days: ["Dec 22", "Dec 23", "Dec 25"] },
-    { number: 2, days: ["Dec 29"] },
-    { number: "Playoffs", days: ["Dec 30", "Jan 1"] }, // placeholders
-  ],
-};
+    // NEW SEASON
+    "2025-2026": [
+      { number: 1, days: ["Dec 22", "Dec 23", "Dec 25"] },
+      { number: 2, days: ["Dec 29"] },
+      { number: "Playoffs", days: ["Dec 30", "Jan 1"] }, // placeholders
+    ],
+  };
 
-// fallback so nothing breaks if "2023-2024" exists but has no data yet
-const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
-
+  // fallback so nothing breaks if "2023-2024" exists but has no data yet
+  const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
 
   const placeholderMatches = [
     //DECEMBER 23
@@ -558,8 +557,8 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       year: "2025-2026",
       week: 1,
       day: "Dec 23",
-      homeTeam: "COLE WORLD FC",
-      awayTeam: "DEMBELE FC",
+      homeTeam: "VALVERDE FC",
+      awayTeam: "DABEAST FC",
       homeScore: "-",
       awayScore: "-",
       date: "Dec 23",
@@ -570,8 +569,8 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       year: "2025-2026",
       week: 1,
       day: "Dec 23",
-      homeTeam: "VALVERDE FC",
-      awayTeam: "DABEAST FC",
+      homeTeam: "COLE WORLD FC",
+      awayTeam: "DEMBELE FC",
       homeScore: "-",
       awayScore: "-",
       date: "Dec 23",
@@ -668,8 +667,8 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       year: "2025-2026",
       week: 1,
       day: "Dec 25",
-      homeTeam: "DABEAST FC",
-      awayTeam: "MANSAF FC",
+      homeTeam: "PEDRI FC",
+      awayTeam: "DEMBELE FC",
       homeScore: "-",
       awayScore: "-",
       date: "Dec 25",
@@ -680,15 +679,15 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       year: "2025-2026",
       week: 1,
       day: "Dec 25",
-      homeTeam: "PEDRI FC",
-      awayTeam: "DEMBELE FC",
+      homeTeam: "DABEAST FC",
+      awayTeam: "MANSAF FC",
       homeScore: "-",
       awayScore: "-",
       date: "Dec 25",
       time: "11:30 PM",
     },
 
-    // DECEMBER 29 (Day 4) — 3 games
+    // DECEMBER 29 (Day 4) — 3 games + QFs (first leg)
     {
       id: "2025-2026-2-Dec 29-1",
       year: "2025-2026",
@@ -725,35 +724,166 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       date: "Dec 29",
       time: "10:00 PM",
     },
+    {
+      id: "2025-2026-2-Dec 29-break-1",
+      year: "2025-2026",
+      week: 2,
+      day: "Dec 29",
+      homeTeam: "(Break)",
+      awayTeam: "-",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 29",
+      time: "10:30 PM",
+    },
+    {
+      id: "2025-2026-2-Dec 29-qf-1",
+      year: "2025-2026",
+      week: 2,
+      day: "Dec 29",
+      homeTeam: "QUARTER FINAL A (FIRST LEG)",
+      awayTeam: "TBD",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 29",
+      time: "11:00 PM",
+    },
+    {
+      id: "2025-2026-2-Dec 29-qf-2",
+      year: "2025-2026",
+      week: 2,
+      day: "Dec 29",
+      homeTeam: "QUARTER FINAL B (FIRST LEG)",
+      awayTeam: "TBD",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 29",
+      time: "11:30 PM",
+    },
 
-    // DECEMBER 30 (placeholder)
+    // DECEMBER 30 (Day 5) — QFs (second leg) + Semis (first leg)
     {
       id: "2025-2026-Playoffs-Dec 30-1",
       year: "2025-2026",
       week: "Playoffs",
       day: "Dec 30",
-      homeTeam: "PLAYOFFS",
+      homeTeam: "QUARTER FINAL A (SECOND LEG)",
       awayTeam: "TBD",
       homeScore: "-",
       awayScore: "-",
       date: "Dec 30",
       time: "9:00 PM",
     },
+    {
+      id: "2025-2026-Playoffs-Dec 30-2",
+      year: "2025-2026",
+      week: "Playoffs",
+      day: "Dec 30",
+      homeTeam: "QUARTER FINAL B (SECOND LEG)",
+      awayTeam: "TBD",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 30",
+      time: "9:30 PM",
+    },
+    {
+      id: "2025-2026-Playoffs-Dec 30-break-1",
+      year: "2025-2026",
+      week: "Playoffs",
+      day: "Dec 30",
+      homeTeam: "(Break)",
+      awayTeam: "-",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 30",
+      time: "10:00 PM",
+    },
+    {
+      id: "2025-2026-Playoffs-Dec 30-3",
+      year: "2025-2026",
+      week: "Playoffs",
+      day: "Dec 30",
+      homeTeam: "SEMI FINAL A (FIRST LEG)",
+      awayTeam: "TBD",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 30",
+      time: "10:30 PM",
+    },
+    {
+      id: "2025-2026-Playoffs-Dec 30-4",
+      year: "2025-2026",
+      week: "Playoffs",
+      day: "Dec 30",
+      homeTeam: "SEMI FINAL B (FIRST LEG)",
+      awayTeam: "TBD",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 30",
+      time: "11:00 PM",
+    },
+    {
+      id: "2025-2026-Playoffs-Dec 30-break-2",
+      year: "2025-2026",
+      week: "Playoffs",
+      day: "Dec 30",
+      homeTeam: "(Break)",
+      awayTeam: "-",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Dec 30",
+      time: "11:30 PM",
+    },
 
-    // JAN 1 (placeholder)
+    // JAN 1 (Day 6) — Semis (second leg) + Final
     {
       id: "2025-2026-Playoffs-Jan 1-1",
       year: "2025-2026",
       week: "Playoffs",
       day: "Jan 1",
-      homeTeam: "PLAYOFFS",
+      homeTeam: "SEMI FINAL A (SECOND LEG)",
       awayTeam: "TBD",
       homeScore: "-",
       awayScore: "-",
       date: "Jan 1",
       time: "9:00 PM",
     },
-
+    {
+      id: "2025-2026-Playoffs-Jan 1-2",
+      year: "2025-2026",
+      week: "Playoffs",
+      day: "Jan 1",
+      homeTeam: "SEMI FINAL B (SECOND LEG)",
+      awayTeam: "TBD",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Jan 1",
+      time: "9:30 PM",
+    },
+    {
+      id: "2025-2026-Playoffs-Jan 1-break-1",
+      year: "2025-2026",
+      week: "Playoffs",
+      day: "Jan 1",
+      homeTeam: "(Break Extended)",
+      awayTeam: "-",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Jan 1",
+      time: "10:00 PM",
+    },
+    {
+      id: "2025-2026-Playoffs-Jan 1-3",
+      year: "2025-2026",
+      week: "Playoffs",
+      day: "Jan 1",
+      homeTeam: "FINAL",
+      awayTeam: "TBD",
+      homeScore: "-",
+      awayScore: "-",
+      date: "Jan 1",
+      time: "10:30 PM",
+    },
   ];
 
   const playoffDays = weeks.find((w) => w.number === "Playoffs")?.days || [];
@@ -765,7 +895,6 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       ((typeof selectedWeek === "number" && match.week === selectedWeek) ||
         (selectedWeek === "Playoffs" && playoffDays.includes(match.day)))
   );
-
 
   const renderPlayoffMatches = (matches) => {
     return matches.map((match, index) => (
@@ -802,12 +931,12 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
               const newYear = e.target.value;
               setSelectedYear(newYear);
 
-              const yearWeeks = weeksByYear[newYear] || weeksByYear["2024-2025"];
+              const yearWeeks =
+                weeksByYear[newYear] || weeksByYear["2024-2025"];
               const firstWeek = yearWeeks[0];
               setSelectedWeek(firstWeek.number);
               setSelectedDay(firstWeek.days[0]);
             }}
-
             className="filter-select">
             {years.map((year) => (
               <option key={year} value={year}>
@@ -820,14 +949,15 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
             value={selectedWeek}
             onChange={(e) => {
               const weekValue =
-                e.target.value === "Playoffs" ? "Playoffs" : Number(e.target.value);
+                e.target.value === "Playoffs"
+                  ? "Playoffs"
+                  : Number(e.target.value);
 
               setSelectedWeek(weekValue);
 
               const weekObj = weeks.find((w) => w.number === weekValue);
               if (weekObj?.days?.length) setSelectedDay(weekObj.days[0]);
             }}
-
             className="filter-select">
             {weeks.map((week) => (
               <option key={week.number} value={week.number}>
