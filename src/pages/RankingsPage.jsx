@@ -40,7 +40,7 @@ const RankingsPage = () => {
   });
 
   const standings = [
-    team("VALVERDE FC", AdnanLogo, 2, 0, 0, 2, 0, 0),
+    team("VALVERDE FC", AdnanLogo, 2, 0, 0, 2, 2, 5),
     team("MANSAF FC", BombsLogo, 2, 1, 1, 0, 1, 0),
     team("PEDRI FC", PedriLogo, 2, 0, 1, 1, 1, 2),
     team("DEMBELE FC", SohaibLogo, 2, 1, 0, 1, 4, 2),
