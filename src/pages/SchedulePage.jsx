@@ -8,26 +8,25 @@ const SchedulePage = () => {
   const [selectedWeek, setSelectedWeek] = useState(1);
   const [selectedDay, setSelectedDay] = useState("Dec 22");
 
-const years = ["2023-2024", "2024-2025", "2025-2026"];
+  const years = ["2023-2024", "2024-2025", "2025-2026"];
 
-const weeksByYear = {
-  "2024-2025": [
-    { number: 1, days: ["Dec 23", "Dec 26", "Dec 28"] },
-    { number: 2, days: ["Dec 29", "Dec 30"] },
-    { number: "Playoffs", days: ["Jan 2"] },
-  ],
+  const weeksByYear = {
+    "2024-2025": [
+      { number: 1, days: ["Dec 23", "Dec 26", "Dec 28"] },
+      { number: 2, days: ["Dec 29", "Dec 30"] },
+      { number: "Playoffs", days: ["Jan 2"] },
+    ],
 
-  // NEW SEASON
-  "2025-2026": [
-    { number: 1, days: ["Dec 22", "Dec 23", "Dec 25"] },
-    { number: 2, days: ["Dec 29"] },
-    { number: "Playoffs", days: ["Dec 30", "Jan 1"] }, // placeholders
-  ],
-};
+    // NEW SEASON
+    "2025-2026": [
+      { number: 1, days: ["Dec 22", "Dec 23", "Dec 25"] },
+      { number: 2, days: ["Dec 29"] },
+      { number: "Playoffs", days: ["Dec 30", "Jan 1"] }, // placeholders
+    ],
+  };
 
-// fallback so nothing breaks if "2023-2024" exists but has no data yet
-const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
-
+  // fallback so nothing breaks if "2023-2024" exists but has no data yet
+  const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
 
   const placeholderMatches = [
     //DECEMBER 23
@@ -474,8 +473,8 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       day: "Dec 22",
       homeTeam: "VALVERDE FC",
       awayTeam: "MANSAF FC",
-      homeScore: "-",
-      awayScore: "-",
+      homeScore: "0",
+      awayScore: "1",
       date: "Dec 22",
       time: "9:00 PM",
     },
@@ -486,8 +485,8 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       day: "Dec 22",
       homeTeam: "DEMBELE FC",
       awayTeam: "COLE WORLD FC",
-      homeScore: "-",
-      awayScore: "-",
+      homeScore: "4",
+      awayScore: "1",
       date: "Dec 22",
       time: "9:30 PM",
     },
@@ -498,8 +497,8 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       day: "Dec 22",
       homeTeam: "DABEAST FC",
       awayTeam: "PEDRI FC",
-      homeScore: "-",
-      awayScore: "-",
+      homeScore: "2",
+      awayScore: "1",
       date: "Dec 22",
       time: "10:00 PM",
     },
@@ -510,8 +509,8 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       day: "Dec 22",
       homeTeam: "COLE WORLD FC",
       awayTeam: "VALVERDE FC",
-      homeScore: "-",
-      awayScore: "-",
+      homeScore: "4",
+      awayScore: "2",
       date: "Dec 22",
       time: "10:30 PM",
     },
@@ -522,8 +521,8 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       day: "Dec 22",
       homeTeam: "PEDRI FC",
       awayTeam: "MANSAF FC",
-      homeScore: "-",
-      awayScore: "-",
+      homeScore: "0",
+      awayScore: "0",
       date: "Dec 22",
       time: "11:00 PM",
     },
@@ -534,8 +533,8 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       day: "Dec 22",
       homeTeam: "DEMBELE FC",
       awayTeam: "DABEAST FC",
-      homeScore: "-",
-      awayScore: "-",
+      homeScore: "0",
+      awayScore: "1",
       date: "Dec 22",
       time: "11:30 PM",
     },
@@ -753,7 +752,6 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       date: "Jan 1",
       time: "9:00 PM",
     },
-
   ];
 
   const playoffDays = weeks.find((w) => w.number === "Playoffs")?.days || [];
@@ -765,7 +763,6 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
       ((typeof selectedWeek === "number" && match.week === selectedWeek) ||
         (selectedWeek === "Playoffs" && playoffDays.includes(match.day)))
   );
-
 
   const renderPlayoffMatches = (matches) => {
     return matches.map((match, index) => (
@@ -802,12 +799,12 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
               const newYear = e.target.value;
               setSelectedYear(newYear);
 
-              const yearWeeks = weeksByYear[newYear] || weeksByYear["2024-2025"];
+              const yearWeeks =
+                weeksByYear[newYear] || weeksByYear["2024-2025"];
               const firstWeek = yearWeeks[0];
               setSelectedWeek(firstWeek.number);
               setSelectedDay(firstWeek.days[0]);
             }}
-
             className="filter-select">
             {years.map((year) => (
               <option key={year} value={year}>
@@ -820,14 +817,15 @@ const weeks = weeksByYear[selectedYear] || weeksByYear["2024-2025"];
             value={selectedWeek}
             onChange={(e) => {
               const weekValue =
-                e.target.value === "Playoffs" ? "Playoffs" : Number(e.target.value);
+                e.target.value === "Playoffs"
+                  ? "Playoffs"
+                  : Number(e.target.value);
 
               setSelectedWeek(weekValue);
 
               const weekObj = weeks.find((w) => w.number === weekValue);
               if (weekObj?.days?.length) setSelectedDay(weekObj.days[0]);
             }}
-
             className="filter-select">
             {weeks.map((week) => (
               <option key={week.number} value={week.number}>

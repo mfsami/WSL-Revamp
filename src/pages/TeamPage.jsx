@@ -33,7 +33,7 @@ const TeamPage = () => {
         { name: "Husam Altaher", number: 11, position: "GK" },
         { name: "Tariq Assaf", number: 7, position: "FWD/DEF" },
         { name: "Obeydulah Sheikhdon", number: 11, position: "DEF" },
-        { name: "Taha El-sayed", number: 11, position: "FWD/DEF" },
+        { name: "Motassim Assaf", number: 11, position: "FWD/DEF" },
         { name: "Sohaib Khadri", number: 11, position: "DEF" },
       ],
     },
@@ -47,8 +47,7 @@ const TeamPage = () => {
         { name: "Rehan Khadri", number: 10, position: "FWD" },
         { name: "Sami El-sayed", number: 7, position: "FWD/DEF" },
         { name: "Yazan Al-Maani", number: 11, position: "FWD/DEF" },
-        { name: "Motassim Assaf", number: 11, position: "FWD/DEF" },
-        
+        { name: "Taha El-sayed", number: 11, position: "FWD/DEF" },
       ],
     },
     {

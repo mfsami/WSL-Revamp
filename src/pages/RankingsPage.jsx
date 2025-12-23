@@ -9,7 +9,6 @@ import ColeLogo from "../assets/images/logos/cole.jpg"; // Cole World
 import PedriLogo from "../assets/images/logos/pedri.jpg"; // Pedri
 import BombsLogo from "../assets/images/logos/bombs.jpg"; // Mansaf
 
-
 const RankingsPage = () => {
   const groupAOrder = ["VALVERDE FC", "MANSAF FC", "PEDRI FC"];
   const groupBOrder = ["DEMBELE FC", "COLE WORLD FC", "DABEAST FC"];
@@ -27,17 +26,27 @@ const RankingsPage = () => {
     points: 0,
   });
 
+  const team = (name, logo, gp, w, d, l, gf, ga) => ({
+    name,
+    logo,
+    gamesPlayed: gp,
+    wins: w,
+    draws: d,
+    losses: l,
+    goalsFor: gf,
+    goalsAgainst: ga,
+    goalDifference: gf - ga,
+    points: w * 3 + d,
+  });
 
-  // This season standings (NEW SEASON — all stats start at 0)
-const standings = [
-  emptyTeam("VALVERDE FC", AdnanLogo),
-  emptyTeam("MANSAF FC", BombsLogo),
-  emptyTeam("PEDRI FC", PedriLogo),
-  emptyTeam("DEMBELE FC", SohaibLogo),
-  emptyTeam("COLE WORLD FC", ColeLogo),
-  emptyTeam("DABEAST FC", ZakLogo),
-];
-
+  const standings = [
+    team("VALVERDE FC", AdnanLogo, 2, 0, 0, 2, 0, 0),
+    team("MANSAF FC", BombsLogo, 2, 1, 1, 0, 1, 0),
+    team("PEDRI FC", PedriLogo, 2, 0, 1, 1, 1, 2),
+    team("DEMBELE FC", SohaibLogo, 2, 1, 0, 1, 4, 2),
+    team("COLE WORLD FC", ColeLogo, 2, 1, 0, 1, 5, 3),
+    team("DABEAST FC", ZakLogo, 2, 2, 0, 0, 3, 1),
+  ];
 
   const sortTeams = (teams) => {
     return [...teams].sort(
@@ -142,9 +151,7 @@ const standings = [
                 {team.goalDifference}
               </td>
 
-              <td className="py-3 px-2 text-center font-bold">
-                {team.points}
-              </td>
+              <td className="py-3 px-2 text-center font-bold">{team.points}</td>
             </tr>
           ))}
         </tbody>
@@ -164,18 +171,23 @@ const standings = [
 
         {/* --------------------------  LEAGUE INFO -------------------------- */}
         <section className="mt-8 bg-[#1a1a1a] rounded-lg p-4 md:p-6">
-
           {/* Format + Playoffs */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-sm text-gray-300 items-start">
             <div>
               <h4 className="text-white font-semibold mb-2">Format</h4>
               <ul className="space-y-1">
                 <li>6 teams → 2 groups of 3</li>
-                <li className="pt-2 font-semibold text-gray-200">Round robin</li>
-                <li>Play the 2 teams in your group twice each (home & away) = 4 games</li>
+                <li className="pt-2 font-semibold text-gray-200">
+                  Round robin
+                </li>
+                <li>
+                  Play the 2 teams in your group twice each (home & away) = 4
+                  games
+                </li>
                 <li>Play the 3 teams in the other group once = 3 games</li>
                 <li className="pt-1">
-                  <span className="font-semibold text-gray-200">Total:</span> 7 games per team
+                  <span className="font-semibold text-gray-200">Total:</span> 7
+                  games per team
                 </li>
               </ul>
             </div>
@@ -205,13 +217,16 @@ const standings = [
               <p className="text-gray-400 mb-2">Points system</p>
               <ul className="space-y-1">
                 <li>
-                  <span className="font-semibold text-gray-200">W</span> (Win) = 3 pts
+                  <span className="font-semibold text-gray-200">W</span> (Win) =
+                  3 pts
                 </li>
                 <li>
-                  <span className="font-semibold text-gray-200">D</span> (Draw) = 1 pt
+                  <span className="font-semibold text-gray-200">D</span> (Draw)
+                  = 1 pt
                 </li>
                 <li>
-                  <span className="font-semibold text-gray-200">L</span> (Loss) = 0 pts
+                  <span className="font-semibold text-gray-200">L</span> (Loss)
+                  = 0 pts
                 </li>
               </ul>
             </div>
@@ -221,32 +236,41 @@ const standings = [
               <h4 className="text-white font-semibold mb-2">Abbreviations</h4>
               <ul className="space-y-1">
                 <li>
-                  <span className="font-semibold text-gray-200">GP</span> = Games Played
+                  <span className="font-semibold text-gray-200">GP</span> =
+                  Games Played
                 </li>
                 <li>
-                  <span className="font-semibold text-gray-200">W / D / L</span> = Wins / Draws / Losses
+                  <span className="font-semibold text-gray-200">W / D / L</span>{" "}
+                  = Wins / Draws / Losses
                 </li>
                 <li>
-                  <span className="font-semibold text-gray-200">GF</span> = Goals For (scored)
+                  <span className="font-semibold text-gray-200">GF</span> =
+                  Goals For (scored)
                 </li>
                 <li>
-                  <span className="font-semibold text-gray-200">GA</span> = Goals Against (conceded)
+                  <span className="font-semibold text-gray-200">GA</span> =
+                  Goals Against (conceded)
                 </li>
                 <li>
-                  <span className="font-semibold text-gray-200">GD</span> = Goal Difference (GF − GA)
+                  <span className="font-semibold text-gray-200">GD</span> = Goal
+                  Difference (GF − GA)
                 </li>
                 <li>
-                  <span className="font-semibold text-gray-200">YC</span> = Yellow Cards
+                  <span className="font-semibold text-gray-200">YC</span> =
+                  Yellow Cards
                 </li>
                 <li>
-                  <span className="font-semibold text-gray-200">RC</span> = Red Cards
+                  <span className="font-semibold text-gray-200">RC</span> = Red
+                  Cards
                 </li>
               </ul>
             </div>
 
             {/* Tie-breakers */}
             <div className="md:col-span-2">
-              <h4 className="text-white font-semibold mb-2">Tie-breakers (in order)</h4>
+              <h4 className="text-white font-semibold mb-2">
+                Tie-breakers (in order)
+              </h4>
               <ol className="list-decimal list-inside space-y-1">
                 <li>Points</li>
                 <li>Head-to-head points (among tied teams)</li>
@@ -263,8 +287,6 @@ const standings = [
             </div>
           </div>
         </section>
-
-
       </main>
 
       <Footer />
