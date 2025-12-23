@@ -15,7 +15,7 @@ export const players20252026 = [
     name: "Mohammed Sheikh",
     team: "DEMBELE FC",
     position: "BOTH",
-    goals: 0,
+    goals: 1,
     assists: 0,
     yellowCards: 0,
     redCards: 0,
