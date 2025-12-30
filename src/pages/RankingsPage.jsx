@@ -40,12 +40,12 @@ const RankingsPage = () => {
   });
 
   const standings = [
-    team("VALVERDE FC", AdnanLogo, 6, 0, 0, 6, 6, 24),
-    team("MANSAF FC", BombsLogo, 6, 3, 2, 1, 10, 3),
-    team("PEDRI FC", PedriLogo, 6, 2, 2, 2, 8, 7),
-    team("DEMBELE FC", SohaibLogo, 6, 4, 1, 1, 16, 6),
-    team("COLE WORLD FC", ColeLogo, 6, 1, 1, 4, 6, 9),
-    team("DABEAST FC", ZakLogo, 6, 4, 2, 0, 12, 6),
+    team("VALVERDE FC", AdnanLogo, 8, 0, 2, 6, 10, 28),
+    team("MANSAF FC", BombsLogo, 7, 3, 2, 2, 10, 6),
+    team("PEDRI FC", PedriLogo, 8, 2, 4, 2, 10, 9),
+    team("DEMBELE FC", SohaibLogo, 8, 5, 2, 1, 20, 9),
+    team("COLE WORLD FC", ColeLogo, 8, 1, 2, 5, 8, 13),
+    team("DABEAST FC", ZakLogo, 7, 5, 2, 0, 15, 6),
   ];
 
   const sortTeams = (teams) => {
