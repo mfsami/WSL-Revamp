@@ -41,11 +41,11 @@ const RankingsPage = () => {
 
   const standings = [
     team("VALVERDE FC", AdnanLogo, 7, 0, 1, 6, 8, 26),
-    team("MANSAF FC", BombsLogo, 7, 3, 2, 2, 10, 6),
-    team("PEDRI FC", PedriLogo, 7, 2, 3, 2, 8, 7),
+    team("MANSAF FC", BombsLogo, 7, 3, 2, 2, 11, 5),
+    team("PEDRI FC", PedriLogo, 7, 2, 3, 2, 10, 9),
     team("DEMBELE FC", SohaibLogo, 7, 5, 1, 1, 18, 7),
-    team("COLE WORLD FC", ColeLogo, 7, 1, 1, 5, 6, 11),
-    team("DABEAST FC", ZakLogo, 7, 5, 2, 0, 13, 4),
+    team("COLE WORLD FC", ColeLogo, 7, 1, 1, 5, 6, 15),
+    team("DABEAST FC", ZakLogo, 7, 5, 2, 0, 15, 4),
   ];
 
   const sortTeams = (teams) => {
