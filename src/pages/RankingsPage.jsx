@@ -45,7 +45,7 @@ const RankingsPage = () => {
     team("PEDRI FC", PedriLogo, 7, 2, 3, 2, 10, 9),
     team("DEMBELE FC", SohaibLogo, 7, 5, 1, 1, 18, 7),
     team("COLE WORLD FC", ColeLogo, 7, 1, 1, 5, 6, 15),
-    team("DABEAST FC", ZakLogo, 7, 5, 2, 0, 15, 4),
+    team("DABEAST FC", ZakLogo, 7, 5, 2, 0, 15, 6),
   ];
 
   const sortTeams = (teams) => {
